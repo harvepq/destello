@@ -7,7 +7,7 @@ const icons = [
 ]
 
 const footerLinks = [
-  {name: 'Nosotros', url: '#'},
+  {name: 'Home', url: '#'},
   {name: 'Tours', url: '#'},
   {name: 'Experiencias', url: '#'},
   {name: 'Nosotros', url: '#'}
