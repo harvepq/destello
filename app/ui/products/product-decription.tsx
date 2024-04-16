@@ -65,7 +65,7 @@ const product = {
 
 export default function ProductDescription() {
   return (
-    <div className="">
+    <div className="px-5">
       <h1 className="text-3xl font-semibold">{product.title}</h1>
       <p className="text-[#6D6D6D] py-4 mb-4">{product.description}</p>
       <div className="py-8 border-t-[1px] border-[#D2D2D2]">
@@ -102,6 +102,14 @@ export default function ProductDescription() {
             </li>
           ))}
         </ul>
+      </div>
+      <div className="flex justify-between items-center border-t-[1px] border-[#D2D2D2] py-2 px-6">
+        <div className="leading-3">
+          <h3 className="text-xl">US$ 380</h3>
+          <span className="block text-[#6D6D6D]">por persona</span>
+          <h3 className="text-xl">PEN 780</h3>
+        </div>
+        <button className="bg-[#052659] text-white text-lg w-32 h-12 rounded-xl">Reservar</button>
       </div>
     </div>
   )
