@@ -27,6 +27,38 @@ const product = {
       title: "Dificultad",
       text: "Facil"
     }
+  ],
+  itinerary: [
+    {
+      id: '11',
+      day: 'Dia 1',
+      activities: [
+        {id: 'day1', start: '7:00', end:'8:00', descp: 'Desayuno en el Hotel'},
+        {id: 'day2', start: '7:00', end:'12:00', descp: 'Esto es la prueba mas absurda que puede existir ent todo el planeta'},
+        {id: 'day3', start: '13:00', end:'18:00', descp: 'Paseo con el guia asignado'},
+        {id: 'day4', start: '18:00', end:'23:00', descp: 'Cena de gala en el hotel'}
+      ]
+    },
+    {
+      id: '12',
+      day: 'Dia 2',
+      activities: [
+        {id: 'day1', start: '7:00', end:'8:00', descp: 'Desayuno en el Hotel'},
+        {id: 'day2', start: '7:00', end:'12:00', descp: 'Esto es la prueba mas absurda que puede existir ent todo el planeta'},
+        {id: 'day3', start: '13:00', end:'18:00', descp: 'Paseo con el guia asignado'},
+        {id: 'day4', start: '18:00', end:'23:00', descp: 'Cena de gala en el hotel'}
+      ]
+    },
+    {
+      id: '13',
+      day: 'Dia 3',
+      activities: [
+        {id: 'day1', start: '7:00', end:'8:00', descp: 'Desayuno en el Hotel'},
+        {id: 'day2', start: '7:00', end:'12:00', descp: 'Esto es la prueba mas absurda que puede existir ent todo el planeta'},
+        {id: 'day3', start: '13:00', end:'18:00', descp: 'Paseo con el guia asignado'},
+        {id: 'day4', start: '18:00', end:'23:00', descp: 'Cena de gala en el hotel'}
+      ]
+    }
   ]
 }
 
@@ -45,6 +77,28 @@ export default function ProductDescription() {
                 <h3 className="leading-4 mb-1">{item.title}</h3>
                 <p className="text-[#6D6D6D] text-sm leading-4">{item.text}</p>
               </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className="py-8 border-t-[1px] border-[#D2D2D2]">
+        <h2 className="text-2xl text-center">Itinerario</h2>
+        <ul className="flex flex-col gap-4 pt-2">
+          {product.itinerary.map(item => (
+            <li key={item.id}>
+              <h3 className="text-lg">{item.day}</h3>
+              <ul className="flex flex-col gap-2 pl-4">
+                {item.activities.map(activity => (
+                  <li key={activity.id} className="flex items-center text-[#6D6D6D] leading-5">
+                    <div className="w-28 flex shrink-0">
+                      <div>{activity.start}</div>
+                      &nbsp;-&nbsp;
+                      <div>{activity.end}</div>
+                    </div>
+                    <p>{activity.descp}</p>
+                  </li>
+                ))}
+              </ul>
             </li>
           ))}
         </ul>
