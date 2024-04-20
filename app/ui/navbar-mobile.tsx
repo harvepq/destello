@@ -34,10 +34,12 @@ export default function NavBarMobile () {
               alt="mobile menu icon"
             />
           </button>
-          <p className="text-xl font-extrabold leading-6">
-            Destello<br />
-            &emsp;Andino
-          </p>
+          <Link href='/'>
+            <p className="text-xl font-extrabold leading-6">
+              Destello<br />
+              &emsp;Andino
+            </p>
+          </Link>
         </div>
         <MenuMobile showMenu={showMenu} setShowMenu={setShowMenu}/>
         <ul className="flex gap-4">
