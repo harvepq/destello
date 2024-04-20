@@ -20,18 +20,17 @@ const links = [
 export default function MenuMobile ({showMenu, setShowMenu} : stateProps) {
 
   const pathname = usePathname()
-  console.log(showMenu)
 
   return (
       <div
-        className={`w-full h-svh bg-black/50 transition ease-in-out duration-500 delay-0 ${showMenu ? '':'-translate-x-full'}`}
-        onClick={(event) => setShowMenu(!showMenu)}
+        className={`absolute top-0 left-0 right-0 z-10 w-full h-svh bg-black/40 transition ease-in-out duration-500 delay-0 text-black ${!showMenu ? '-translate-x-full' : ''}`}
+        onClick={() => setShowMenu(!showMenu)}
       >
         <aside
-          className="w-3/4 h-full bg-white p-6 text-center flex flex-col justify-between"
+          className="w-3/4 h-full flex flex-col justify-between bg-white p-6 text-center"
           onClick={(event) => event.stopPropagation()}
         >
-          <nav className="">
+          <div className="">
             <h2 className="text-2xl mb-8">Destello <br /> Andino</h2>
             {links.map((link) => (
               <Link
@@ -42,7 +41,7 @@ export default function MenuMobile ({showMenu, setShowMenu} : stateProps) {
                 <p>{link.name}</p>
               </Link>
             ))}
-          </nav>
+          </div>
           <div className="mb-8">
               <p>Viaja con los mejores del Peru</p>
               <p>Se un Destello Andino</p>
