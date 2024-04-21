@@ -23,7 +23,7 @@ export default function MenuMobile ({showMenu, setShowMenu} : stateProps) {
 
   return (
       <div
-        className={`absolute top-0 left-0 right-0 z-10 w-full h-svh bg-black/40 transition ease-in-out duration-500 delay-0 text-black ${!showMenu ? '-translate-x-full' : ''}`}
+        className={`fixed top-0 left-0 right-0 z-10 w-full h-svh bg-black/40 transition ease-in-out duration-500 delay-0 text-black ${!showMenu ? '-translate-x-full' : ''}`}
         onClick={() => setShowMenu(!showMenu)}
       >
         <aside
