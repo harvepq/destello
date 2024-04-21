@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 // Import Components
-import FooterMobile from "@/app/ui/footer-mobile";
 import NewsCard from "@/app/ui/news-card";
 import ProductCard from "@/app/ui/product-card";
 import ReasonCard from "@/app/ui/reason-card";
@@ -44,7 +43,6 @@ export default function Home() {
         <ReasonCard />
         <ReasonCard />
       </section>
-      <FooterMobile />
     </main>
   );
 }
