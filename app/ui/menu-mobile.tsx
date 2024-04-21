@@ -37,6 +37,7 @@ export default function MenuMobile ({showMenu, setShowMenu} : stateProps) {
                 key={link.name}
                 href={link.href}
                 className={`flex h-[40px] grow items-center justify-center rounded-md bg-gray-50 ${pathname === link.href ? 'bg-sky-100 text-blue-600' : ''}`}
+                onClick={() => setShowMenu(!showMenu)}
               >
                 <p>{link.name}</p>
               </Link>
