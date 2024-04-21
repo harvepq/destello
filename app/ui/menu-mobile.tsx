@@ -23,7 +23,7 @@ export default function MenuMobile ({showMenu, setShowMenu} : stateProps) {
 
   return (
       <div
-        className={`absolute top-0 left-0 right-0 z-10 w-full h-svh bg-black/40 transition ease-in-out duration-500 delay-0 text-black ${!showMenu ? '-translate-x-full' : ''}`}
+        className={`fixed top-0 left-0 right-0 z-10 w-full h-svh bg-black/40 transition ease-in-out duration-500 delay-0 text-black ${!showMenu ? '-translate-x-full' : ''}`}
         onClick={() => setShowMenu(!showMenu)}
       >
         <aside
@@ -37,6 +37,7 @@ export default function MenuMobile ({showMenu, setShowMenu} : stateProps) {
                 key={link.name}
                 href={link.href}
                 className={`flex h-[40px] grow items-center justify-center rounded-md bg-gray-50 ${pathname === link.href ? 'bg-sky-100 text-blue-600' : ''}`}
+                onClick={() => setShowMenu(!showMenu)}
               >
                 <p>{link.name}</p>
               </Link>
