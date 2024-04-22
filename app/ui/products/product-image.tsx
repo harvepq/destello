@@ -6,7 +6,7 @@ export default function ProductImage({images}: any) {
       </picture>
       <div className="absolute flex justify-end items-end inset-0">
         <div className="text-white bg-[#222222]/[0.66] rounded text-sm px-3 py-1 mr-3 mb-4">
-          1 / {images.lenght}
+          1 / {images.length}
         </div>
       </div>
     </div>
