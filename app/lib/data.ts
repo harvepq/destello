@@ -39,6 +39,16 @@ export function fetchProductCardData () {
   }
 }
 
+export function fetchProductBySlug(slug: string) {
+  try {
+    const data = products.filter(product => product.slug === slug)
+    return data[0]
+  } catch (error) {
+    console.error('Database Error: ', error)
+    throw new Error('Failed to fetch product.')
+  }
+}
+
 export function fetchBlogs () {
   try {
     const data = blogs
