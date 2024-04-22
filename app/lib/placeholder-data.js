@@ -17,15 +17,15 @@ const products =[
       },
       {
         id: 'item2',
-        title: 'Tipo de tour',
-        description: 'Cultural y aventura',
-        icon: 'person-walking'
+        title: 'Duracion',
+        description: '4 Dias - 3 Noches',
+        icon: 'clock'
       },
       {
         id: 'item3',
-        title: 'Duracion',
-        description: '4 Dias / 3 Noches',
-        icon: 'clock'
+        title: 'Tipo de tour',
+        description: 'Cultural y aventura',
+        icon: 'person-walking'
       },
       {
         id: 'item4',
@@ -65,8 +65,8 @@ const products =[
     title: 'Salkantay 4D / 3N',
     description: "El trekking de Salkantay te sumerge en una experiencia icomparable. Desde exhuberantes bosques tropicales hasta majestuosas cumbres nevadas, cada paso te lleva a traves de paisajes sorprendentes. Preparate para una aventura inolvidable que te dejara maravillado por la diversidad de naturaleza.",
     images: ['product1.jpeg'],
-    prices: {dollars: 380, soles: 700},
-    people: 2,
+    prices: {dollars: 400, soles: 1200},
+    people: 4,
     items: [
       {
         id: 'item1',
@@ -76,15 +76,15 @@ const products =[
       },
       {
         id: 'item2',
-        title: 'Tipo de tour',
-        description: 'Aventura',
-        icon: 'person-walking'
+        title: 'Duracion',
+        description: '4 Dias - 3 Noches | 5 Dias - 4 Noches',
+        icon: 'clock'
       },
       {
         id: 'item3',
-        title: 'Duracion',
-        description: '4 Dias / 3 Noches | 5 Dias / 4 Noches',
-        icon: 'clock'
+        title: 'Tipo de tour',
+        description: 'Aventura',
+        icon: 'person-walking'
       },
       {
         id: 'item4',
