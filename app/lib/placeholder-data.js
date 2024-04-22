@@ -121,8 +121,23 @@ const products =[
 
 const blogs = [
   {
-    id: 1
-  }
+    id: 'blog001',
+    slug: 'viaja-suena-vive',
+    name: 'Viaja, Suena y Vive',
+    alt: 'viaja suena y vive',
+    images: ['/icons/news1.jpg'],
+    description: ['...'],
+    location: 'Madre de Dios'
+  },
+  {
+    id: 'blog002',
+    slug: 'se-un-destello-andino',
+    name: 'Se un destello andino',
+    alt: 'se un destello andino',
+    images: ['/icons/news2.jpg'],
+    description: ['...'],
+    location: 'Sicuani - Cusco'
+  },
 ]
 
 const reasons = [
