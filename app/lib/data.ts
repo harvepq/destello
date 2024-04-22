@@ -49,6 +49,25 @@ export function fetchBlogs () {
   }
 }
 
+export function fetchBlogCardData() {
+  try {
+    const data = blogs.map(blog => {
+      return {
+        id: blog.id,
+        name: blog.name,
+        href: `/blog/${blog.slug}`,
+        image: blog.images[0],
+        alt: blog.alt,
+        location: blog.location
+      }
+    })
+    return data
+  } catch (error) {
+    console.error('Database Error: ', error)
+    throw new Error ('Failed to fetch blog card data.')
+  }
+}
+
 export function fetchReasons () {
   try {
     const data = reasons
