@@ -30,8 +30,6 @@ export default function Page({ params }: { params: { slug: string } }) {
       <ProductDescription
         title={product.title}
         description={product.description}
-        prices={product.prices}
-        people= {product.people}
         items={product.items}
         itinerary={product.itinerary}
       />
