@@ -1,16 +1,27 @@
+'use client'
+
+// Nextjs Imports
+import { useRouter } from "next/navigation";
+
+// Components Imports
 import ProductDescription from "@/app/ui/products/product-decription";
 import ProductImage from "@/app/ui/products/product-image";
+
+// Data Imports
 import { fetchProductBySlug } from "@/app/lib/data";
 
 export default function Page({ params }: { params: { slug: string } }) {
   const slug = params.slug
   const product = fetchProductBySlug(slug)
 
+  const route = useRouter()
+
   return (
     <main className="relative">
       <div className="p-4 absolute z-10">
         <button
           className="h-9 w-9 inline-flex justify-center items-center border rounded-full bg-white cursor-pointer border-solid shadow-xl"
+          onClick={() => route.back()}
         >
           <div className="flex items-center px-2 text-[#222222]">
             <svg
