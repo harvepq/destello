@@ -7,10 +7,10 @@ export default function Page({ params }: { params: { slug: string } }) {
   const product = fetchProductBySlug(slug)
 
   return (
-    <main>
-      <div className="p-4">
+    <main className="relative">
+      <div className="p-4 absolute z-10">
         <button
-          className="h-9 w-9 inline-flex justify-center items-center border rounded-full bg-white cursor-pointer border-solid bg-clip-padding shadow-xl"
+          className="h-9 w-9 inline-flex justify-center items-center border rounded-full bg-white cursor-pointer border-solid shadow-xl"
         >
           <div className="flex items-center px-2 text-[#222222]">
             <svg
@@ -35,6 +35,16 @@ export default function Page({ params }: { params: { slug: string } }) {
         items={product.items}
         itinerary={product.itinerary}
       />
+      <div className="w-full fixed bottom-0 bg-white">
+        <div className="flex justify-between items-center border-t-[1px] border-[#D2D2D2] py-2 px-6">
+          <div className="leading-3">
+            <h3 className="text-xl">US$ {product.prices.dollars}</h3>
+            <span className="block text-[#6D6D6D]">por {product.people} persona</span>
+            <h3 className="text-xl">PEN {product.prices.soles}</h3>
+          </div>
+          <button className="bg-[#052659] text-white text-lg w-32 h-12 rounded-lg">Reservar</button>
+        </div>
+      </div>
     </main>
   )
 }
