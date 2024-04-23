@@ -38,12 +38,14 @@ export default function Page({ params }: { params: { slug: string } }) {
         </button>
       </div>
       <ProductImage images={product.images}/>
-      <ProductDescription
-        title={product.title}
-        description={product.description}
-        items={product.items}
-        itinerary={product.itinerary}
-      />
+      <div className="pt-4 pb-24 px-1">
+        <ProductDescription
+          title={product.title}
+          description={product.description}
+          items={product.items}
+          itinerary={product.itinerary}
+        />
+      </div>
       <div className="w-full fixed bottom-0 bg-white">
         <div className="flex justify-between items-center border-t-[1px] border-[#D2D2D2] py-2 px-6">
           <div className="leading-3">
