@@ -18,16 +18,10 @@ interface ItineraryItem {
   activities: Activity[];
 }
 
-interface Prices {
-  dollars: number;
-  soles: number;
-}
 
 interface ProductDescriptionProps {
   title: string;
   description: string;
-  prices: Prices;
-  people: number;
   items: Item[];
   itinerary: ItineraryItem[];
 }
@@ -35,8 +29,6 @@ interface ProductDescriptionProps {
 export default function ProductDescription({
   title,
   description,
-  prices,
-  people,
   items,
   itinerary,
 }: ProductDescriptionProps) {
@@ -79,14 +71,6 @@ export default function ProductDescription({
             </li>
           ))}
         </ul>
-      </div>
-      <div className="flex justify-between items-center border-t-[1px] border-[#D2D2D2] py-2 px-6">
-        <div className="leading-3">
-          <h3 className="text-xl">US$ {prices.dollars}</h3>
-          <span className="block text-[#6D6D6D]">por {people} persona</span>
-          <h3 className="text-xl">PEN {prices.soles}</h3>
-        </div>
-        <button className="bg-[#052659] text-white text-lg w-32 h-12 rounded-xl">Reservar</button>
       </div>
     </div>
   )
