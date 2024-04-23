@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 // Import Components
 import BlogList from "@/app/ui/home/blog-list";
 import ProductList from "@/app/ui/home/product-list";
@@ -9,28 +7,39 @@ export default function Home() {
   return (
     <main>
       {/* Hero Image */}
-      <div>
-        <picture>
-          <img className="w-full object-cover" src="/icons/news1.jpg" alt="" />
+      <div className="relative w-full flex justify-center">
+        <picture >
+          <img className="w-full aspect-[4/5] object-cover brightness-[0.8]" src="/icons/news1.jpg" alt="" />
         </picture>
-        <h1>Se un Destello andino</h1>
+        <div className="w-[60%] absolute bottom-12 text-center">
+          <h1 className="text-white text-4xl mb-6 text-left">
+            <span className="block text-left">Se un</span>
+            <span className="block text-center">Destello</span>
+            <span className="block text-right">Andino</span>
+          </h1>
+          <button className="bg-[#052659] text-white text-lg w-32 h-12 rounded-xl">Ver mas</button>
+        </div>
       </div>
 
       {/* Blogs Section */}
-      <section className="flex flex-col items-center gap-8 px-6 bg-[#EFF0F2] py-10">
-        <h2 className="text-2xl">Vive Las Mejores Experiencias</h2>
-        <BlogList />
+      <section className="px-4 py-6 bg-[#EFF0F2]">
+        <h2 className="text-2xl text-center mb-4">Vive Las Mejores <br /> Experiencias</h2>
+          <div className="flex flex-col items-center gap-4">
+          <BlogList />
+        </div>
       </section>
       {/* Products Section */}
 
-      <section className="flex flex-col items-center gap-8 px-6 py-6">
-        <h2 className="text-2xl">Viaja Con Nosotros</h2>
-        <ProductList />
+      <section className="px-4 py-6">
+        <h2 className="text-2xl text-center mb-4">Viaja Con Nosotros</h2>
+        <div className="flex flex-col items-center gap-4">
+          <ProductList />
+        </div>
       </section>
 
       {/* Reasons Section */}
-      <section className="flex flex-col items-center gap-8 px-6 bg-[#EFF0F2] py-10">
-        <h2 className="text-2xl">Por Que Viajar Con Destello Andino</h2>
+      <section className="flex flex-col items-center gap-8 px-6 py-6 bg-[#EFF0F2]">
+        <h2 className="text-2xl text-center">Por Que Viajar Con <br /> Destello Andino</h2>
         <ReasonList />
       </section>
     </main>
