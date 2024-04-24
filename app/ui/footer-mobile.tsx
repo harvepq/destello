@@ -1,3 +1,6 @@
+// Next Imports
+import Link from "next/link"
+
 // Icons Name | svg file name
 const icons = [
   {name: 'facebook-icon', url: '#'},
@@ -6,11 +9,12 @@ const icons = [
   {name: 'tiktok-icon', url: '#'},
 ]
 
-const footerLinks = [
-  {name: 'Home', url: '#'},
-  {name: 'Tours', url: '#'},
-  {name: 'Blog', url: '#'},
-  {name: 'Nosotros', url: '#'}
+// Footer links
+const links = [
+  {name: 'Home', href: '/'},
+  {name: 'Tours', href: '/tours'},
+  {name: 'Blog', href: '/blog'},
+  {name: 'Nosotros', href: '/about'}
 ]
 
 export default function FooterMobile () {
@@ -27,28 +31,36 @@ export default function FooterMobile () {
           ))}
         </ul>
         <div className="w-full flex justify-around border-t-[1px] border-gray-500 pt-4 ">
-          <h3 className="text-xl text-center">
-            Destello
-            <br />
-            Andino
-          </h3>
-          <ul className="text-center leading-4 text-neutral-300">
-            {footerLinks.map(link => (
-              <li key={link.name}>
-                <a className="text-sm" href={link.url}>{link.name}</a>
-              </li>
+          <Link
+            href={'/'}
+          >
+            <h3 className="text-xl text-center">
+              Destello
+              <br />
+              Andino
+            </h3>
+          </Link>
+          <div className="text-center text-neutral-300">
+            {links.map(link => (
+              <Link
+                key={link.name}
+                href={link.href}
+                className="block p-1"
+              >
+                <p className="text-sm">{link.name}</p>
+              </Link>
             ))}
-          </ul>
+          </div>
         </div>
       </div>
       <div className="flex justify-between px-5 py-2 items-center bg-black text-white text-sm ">
         <span className="">Copyright Ⓒ 2024</span>
         <ul className="flex gap-4">
           <li>
-            <a href="">Terminos y Condiciones</a>
+            <a href="/">Terminos y Condiciones</a>
           </li>
           <li>
-            <a href="">Privacidad</a>
+            <a href="/">Privacidad</a>
           </li>
         </ul>
       </div>

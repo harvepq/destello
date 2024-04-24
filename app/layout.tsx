@@ -6,10 +6,12 @@ import { Sansita } from "next/font/google";
 
 // Components Imports
 import NavBarMobile from "@/app/ui/navbar-mobile";
+import FooterMobile from "@/app/ui/footer-mobile";
 
 // Styles Imports
 import "./globals.css";
 
+// Font Configuration
 const sansita = Sansita({ weight:['400','700','800'], subsets: ["latin"] });
 
 // Metadata
@@ -28,6 +30,7 @@ export default function RootLayout({
       <body className={sansita.className}>
         <NavBarMobile />
         {children}
+        <FooterMobile />
       </body>
     </html>
   );
