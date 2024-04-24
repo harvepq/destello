@@ -5,7 +5,7 @@ const products =[
     name: 'Choquequirao',
     title: 'Chquequirao 4D / 3N',
     description: "Explora la 'hermana sagrada', de Machu Picchu, de donde la impresionante arquitectura y la atmosfera misteriosa te cautivara. Unete a esta expedicion hacia un sitio arqueologico en constante descubrimiento y dejate maravillar por la majestuosidad de Choquequirao.",
-    images: ['product1.jpeg'],
+    images: ['product1.jpeg', 'product2.jpg', 'product3.jpg'],
     prices: {dollars: 380, soles: 700},
     people: 2,
     items: [
