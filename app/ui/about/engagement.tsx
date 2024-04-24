@@ -21,7 +21,7 @@ export default function Engagement ({item}:any) {
           <img className="w-12 h-12" src="/icons/4-square.svg" alt="" />
         </li>
       </ul>
-      <p className="text-[#7D7D7D] my-5">{item.stract}</p>
+      <p className="text-[#7D7D7D] my-5">{item.extract}</p>
     </div>
   )
 }
