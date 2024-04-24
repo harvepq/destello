@@ -1,5 +1,3 @@
-const { describe } = require("node:test")
-
 const products =[
   {
     id: 'destello001',
