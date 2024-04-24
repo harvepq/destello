@@ -5,11 +5,13 @@ export default function Page() {
   return (
     <main>
       {/* Hero Image */}
-      <div>
+      <div className="relative w-full flex justify-center">
         <picture>
-          <img src="/products/product1.jpeg" alt="" />
-          <div>Nosotros</div>
+          <img className="w-full aspect-[3/2] object-cover brightness-[0.8]" src="/products/product1.jpeg" alt="" />
         </picture>
+        <div className="absolute bottom-12 text-center">
+          <h2 className="text-white text-3xl">Nosotros</h2>
+        </div>
       </div>
 
       {/* About Section */}
