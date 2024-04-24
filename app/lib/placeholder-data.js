@@ -1,3 +1,5 @@
+const { describe } = require("node:test")
+
 const products =[
   {
     id: 'destello001',
@@ -167,9 +169,38 @@ const tours = [
   }
 ]
 
+const about = {
+  we_are: {
+    title: 'Quienes Somos?',
+    description: 'Somos tu agencia de viaje segura, responsable y de confianza. Nos dedicamos a organizar y planificar tus viajes, brindandote la tranquilidad de saber que estas en buenas manos. Nuestro compromiso es liberarte de estres de la planificacion, asegurandonos de que cada detalle este cuidadosamente gestionado para que puedas disfrutar de una experiencia sin preocupaciones y llena de momentos inolvidables.'
+  },
+  we_do: {
+    title: 'Que Hacemos?',
+    description: 'Lo que hacemos va mas alla de la simple planificacion de viajes, nos esforzamos por crear experiencias que inspiren, emocionen y enriquezcan la vida de nuestro clientes. Nos comprometemos a entender sus necesidades y deseos individuales para disenar viajes que superen sus expectativas y les permitan sumergirse en la magia de Peru.'
+  },
+  engagement: {
+    title: 'Nuestro Compromiso',
+    description: 'Nuestro objetivo en Destello Andino es proporcionar experiencias de viaje excepcionales y seguras a nuestros clientes, cumpliendo asi nuestra mision de crear recuerdos inolvidables durante su estadia en su destino. Para logar esto, nos comprometemos a:',
+    first: 'Ofrecer un servicio al cliente de primera clase, personalizado y adaptable a las necesidades individuales de cada viajero.',
+    second: 'Garantizar la seguridad y el bienstar de nuestros clientes en cada aspecto de su viaje, desde la planificacion hasta el regreso a su casa.',
+    third: 'Fomentar relaciones solidas con nuestros clientes, basadas en la confianza, la transparencia y la satisfaccion del cliente.',
+    fourth: 'Mantener un enfoque de mejora continua en la calidad y la reduccion del margen de error en nuestros servicios, mediante la evaluacion constantey el ajuste de nuestros procesos',
+    extract: 'Al adherirnos a estos principios y estrategias, nos esforzamos por cumplir nuestra mision de brindar experiencias de viaje inolvidables y convertirnos en el referente lider en viajes por los paises andinos.'
+  },
+  mission: {
+    title: 'Nuestra Mision',
+    description: 'En Destello Andino Travel nos dedicamos a convertir tus suenos de viajar en realidad. Somos expertos en crear experiencias inolvidables, desde la planificacion detallada hasta la ejecucion perfecta. Nuestra mision es liberarte del estres de la planificacion para que puedas sumergirte en la aventura y la emosion. Queremos que cada viaje sea una historia que contar, llena de momentos que te roben el aliento y recuerdos que duren toda la vida.'
+  },
+  vision: {
+    title: 'Nuestra Vision',
+    description: 'Ser el agente de viaje lider en los paises andinos, ofreciendo experiencias unicas y personalizadas que permitan a los viajeros descubrir la diversidad cultural, la riqueza natural y la aventura de los destinos andinos en su totalidad. desde los picos nevados de Colombia, hasta las tierras bajas de Argentina y Chile, aspiramos a ser el punto de referencia para aquellos que buscan explorar toda la region andino.'
+  }
+}
+
 module.exports = {
   products,
   blogs,
   reasons,
-  tours
+  tours,
+  about
 }
