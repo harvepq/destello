@@ -193,5 +193,6 @@ module.exports = {
   products,
   blogs,
   reasons,
-  tours
+  tours,
+  about
 }
