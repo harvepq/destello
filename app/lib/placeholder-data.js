@@ -186,6 +186,14 @@ const about = {
     third: 'Fomentar relaciones solidas con nuestros clientes, basadas en la confianza, la transparencia y la satisfaccion del cliente.',
     fourth: 'Mantener un enfoque de mejora continua en la calidad y la reduccion del margen de error en nuestros servicios, mediante la evaluacion constantey el ajuste de nuestros procesos',
     extract: 'Al adherirnos a estos principios y estrategias, nos esforzamos por cumplir nuestra mision de brindar experiencias de viaje inolvidables y convertirnos en el referente lider en viajes por los paises andinos.'
+  },
+  mission: {
+    title: 'Nuestra Mision',
+    description: 'En Destello Andino Travel nos dedicamos a convertir tus suenos de viajar en realidad. Somos expertos en crear experiencias inolvidables, desde la planificacion detallada hasta la ejecucion perfecta. Nuestra mision es liberarte del estres de la planificacion para que puedas sumergirte en la aventura y la emosion. Queremos que cada viaje sea una historia que contar, llena de momentos que te roben el aliento y recuerdos que duren toda la vida.'
+  },
+  vision: {
+    title: 'Nuestra Vision',
+    description: 'Ser el agente de viaje lider en los paises andinos, ofreciendo experiencias unicas y personalizadas que permitan a los viajeros descubrir la diversidad cultural, la riqueza natural y la aventura de los destinos andinos en su totalidad. desde los picos nevados de Colombia, hasta las tierras bajas de Argentina y Chile, aspiramos a ser el punto de referencia para aquellos que buscan explorar toda la region andino.'
   }
 }
 
