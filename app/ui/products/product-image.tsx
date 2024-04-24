@@ -1,6 +1,8 @@
-export default function ProductImage({images}: any) {
+export default function ProductImage({images, setShowImages}: any) {
   return (
-    <div className="relative w-full cursor-pointer">
+    <div className="relative w-full cursor-pointer"
+      onClick={() => {setShowImages(true)}}
+    >
       <picture>
         <img className="w-full aspect-[3/2] object-cover" src={images[0]} alt="" />
       </picture>
