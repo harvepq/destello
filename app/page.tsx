@@ -28,10 +28,10 @@ export default function Home() {
           <br />
           Experiencias
         </h2>
-          <div className="flex flex-col items-center gap-4">
+        <div className="flex flex-col items-center gap-4 sm:grid sm:grid-cols-2 sm:place-items-center xl:grid-cols-4 lg:px-20">
           <BlogList />
         </div>
-      </section>
+    </section>
 
       {/* Products Section */}
       <section className="px-4 py-6">
