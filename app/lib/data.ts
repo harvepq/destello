@@ -99,6 +99,16 @@ export function fetchPosts() {
   }
 }
 
+export function fetchPostBySlug(slug: string) {
+  try {
+    const data = blogs.filter(blog => blog.slug === slug)
+    return data[0]
+  } catch (error) {
+    console.error('Database Error: ', error)
+    throw new Error('Failed to fetch post.')
+  }
+}
+
 export function fetchReasons () {
   try {
     const data = reasons
