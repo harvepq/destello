@@ -30,7 +30,7 @@ export default function Page() {
             <div className="px-7">
               <h2 className="uppercase mb-6 text-3xl">{post.name}</h2>
               <picture>
-                <img className="w-full aspect-[9/5] object-cover" src="/icons/news1.jpg" alt="" />
+                <img className="w-full aspect-[9/5] object-cover" src={post.image} alt="" />
               </picture>
               <p className="my-5">{post.extract}</p>
               <Link

@@ -1,12 +1,6 @@
-// Next Imports
+// Nextjs Imports
 import type { Metadata } from "next";
 import { Sansita } from "next/font/google";
-
-// React Imports
-
-// Components Imports
-import NavBarMobile from "@/app/ui/navbar-mobile";
-import FooterMobile from "@/app/ui/footer-mobile";
 
 // Styles Imports
 import "./globals.css";
@@ -28,9 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={sansita.className}>
-        <NavBarMobile />
         {children}
-        <FooterMobile />
       </body>
     </html>
   );
