@@ -3,30 +3,22 @@
 // React Imports
 import { useState } from "react"
 
-// Next Imports
+// Nextjs Imports
 import Link from "next/link"
-
-import MenuMobile from "@/app/ui/menu-mobile";
 import { usePathname } from "next/navigation";
 
+// Components Imports
+import MenuMobile from "@/app/ui/menu-mobile";
 
-// Icons Name | svg file name
-const icons = [
-  {name: 'facebook-icon', url: '#'},
-  {name: 'instagram-icon', url: '#'},
-  {name: 'whatsapp-icon', url: '#'},
-  {name: 'tiktok-icon', url: '#'},
-]
+// Utils Imports
+import {pathValidate} from "@/app/lib/utils"
+import { socialNetworks } from "@/app/lib/varibles";
 
-export default function NavBarMobile () {
+export default function Navbar () {
   const pathname = usePathname()
-  const regex1 = /\/products\/.*/;
-  const regex2 = /\/blog\/.*/;
-  const product = regex1.test(pathname)
-  const post = regex2.test(pathname)
-  const showNavbar = !!!(product || post)
+  const showNavbar  = pathValidate(pathname)
 
-  // Movile Menu State
+  // Mobile Menu State
   const [showMenu, setShowMenu] = useState(false)
 
   return (
@@ -34,27 +26,30 @@ export default function NavBarMobile () {
       <nav className='flex justify-between items-center h-auto bg-[#052659] px-5 py-4 text-white'>
         <div className="flex justify-between items-center gap-4">
           <button
-            onClick={() => setShowMenu(!showMenu)}
+            onClick={() => setShowMenu(true)}
           >
             <img
               className="w-8 h-8"
               src="/icons/mobile-menu.svg"
-              alt="mobile menu icon"
+              alt="hamburger menu icon"
             />
           </button>
           <Link href='/'>
             <p className="text-xl font-extrabold leading-6">
-              Destello<br />
-              &emsp;Andino
+              Destello
+              <br />
+              &emsp; Andino
             </p>
           </Link>
         </div>
-        <MenuMobile showMenu={showMenu} setShowMenu={setShowMenu}/>
+
+        <MenuMobile showMenu={showMenu} setShowMenu={setShowMenu} pathname={pathname} />
+
         <ul className="flex gap-4">
-          {icons.map(icon => (
-            <li key={icon.name}>
-              <a href={icon.url}>
-                <img className="w-6" src={`/icons/${icon.name}.svg`} alt={icon.name} />
+          {socialNetworks.map(socialMedia => (
+            <li key={socialMedia.name}>
+              <a href={socialMedia.href}>
+                <img className="w-6 h-6" src={`/icons/${socialMedia.icon}.svg`} alt={`${socialMedia.name} icon`} />
               </a>
             </li>
           ))}
