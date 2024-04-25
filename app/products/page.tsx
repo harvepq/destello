@@ -1,5 +1,4 @@
-import Link from "next/link"
-import ProductCard from "../ui/product-card"
+import ProductList from "@/app/ui/home/product-list"
 
 export default function Page() {
   return (
@@ -19,15 +18,12 @@ export default function Page() {
             <div className="w-[10%]">
               <span className="block border-t-2 border-[#D2984E]"></span>
             </div>
-            <h3 className="uppercase text-[#D2984E]">CATEGORIA</h3>
+            <h3 className="uppercase text-[#D2984E]">nuesstros productos</h3>
           </div>
           <div className="px-7">
             <h2 className="uppercase mb-6 text-3xl">Convierte tu viaje en un simbolo de identidad de tu cliente</h2>
             <div className="flex flex-col gap-6">
-              <ProductCard name="Salkantay" image="/icons/news2.jpg" items={{duration: "3 Dias - 2 Noches", tour: "En grupo"}} prices={{dollars: "234", soles: "353"}}/>
-              <ProductCard name="Salkantay" image="/icons/news2.jpg" items={{duration: "3 Dias - 2 Noches", tour: "En grupo"}} prices={{dollars: "234", soles: "353"}}/>
-              <ProductCard name="Salkantay" image="/icons/news2.jpg" items={{duration: "3 Dias - 2 Noches", tour: "En grupo"}} prices={{dollars: "234", soles: "353"}}/>
-              <ProductCard name="Salkantay" image="/icons/news2.jpg" items={{duration: "3 Dias - 2 Noches", tour: "En grupo"}} prices={{dollars: "234", soles: "353"}}/>
+              <ProductList />
             </div>
           </div>
         </section>
