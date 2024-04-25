@@ -8,8 +8,8 @@ export default function Home() {
     <main>
       {/* Hero Image */}
       <div className="relative w-full flex justify-center">
-        <picture >
-          <img className="w-full aspect-[4/5] object-cover brightness-[0.8]" src="/icons/news1.jpg" alt="" />
+        <picture className="w-full" >
+          <img className="w-full aspect-[4/5] object-cover brightness-[0.8] sm:h-[650px] lg:h-[720px]" src="/icons/news1.jpg" alt="" />
         </picture>
         <div className="w-[60%] absolute bottom-12 text-center">
           <h1 className="text-white text-4xl mb-6 text-left">
