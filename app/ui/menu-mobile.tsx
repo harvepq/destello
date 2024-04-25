@@ -13,29 +13,29 @@ interface stateProps {
 export default function MenuMobile ({showMenu, setShowMenu, pathname} : stateProps) {
   return (
       <div
-        className={`fixed top-0 left-0 right-0 z-10 w-full h-svh bg-black/40 transition ease-in-out duration-500 delay-0 text-black ${!showMenu ? '-translate-x-full' : ''}`}
+        className={`fixed top-0 left-0 right-0 z-10 w-full h-svh bg-black/40 transition ease-in-out duration-500 delay-0 text-black  ${!showMenu ? '-translate-x-full' : ''} sm:static sm:h-full sm:translate-x-0 sm:bg-transparent sm:text-white sm:transition-none sm:w-auto`}
         onClick={() => setShowMenu(!showMenu)}
       >
         <aside
-          className="w-3/4 h-full flex flex-col justify-between bg-white p-6 text-center"
+          className="w-3/4 h-full flex flex-col justify-between bg-white p-6 text-center sm:w-full sm:bg-transparent sm:p-0"
           onClick={(event) => event.stopPropagation()}
         >
           <div className="">
-            <h2 className="text-2xl mb-8">Destello <br /> Andino</h2>
-            <div className="border-t border-b py-10">
+            <h2 className="text-2xl mb-8 sm:hidden">Destello <br /> Andino</h2>
+            <div className="border-t border-b py-10 sm:border-0 sm:flex sm:p-0 lg:gap-12">
               {links.map((link) => (
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`flex h-[40px] grow items-center justify-center rounded-md bg-gray-50 ${pathname === link.href ? 'bg-sky-100 text-blue-600' : ''}`}
+                  className={`flex h-[40px] grow items-center justify-center rounded-md ${pathname === link.href ? 'bg-sky-100 text-blue-600' : ''}`}
                   onClick={() => setShowMenu(!showMenu)}
                 >
-                  <p>{link.name}</p>
+                  <p className="text-lg sm:px-4 md:text-xl">{link.name}</p>
                 </Link>
               ))}
             </div>
           </div>
-          <div className="mb-8">
+          <div className="mb-8 sm:hidden">
             <div className="flex flex-col gap-2 items-center justify-center mb-10">
               <p>Contactanos al:</p>
               <div className="text-black">
