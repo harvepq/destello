@@ -17,19 +17,23 @@ export default function Home() {
             <span className="block text-center">Destello</span>
             <span className="block text-right">Andino</span>
           </h1>
-          <button className="bg-[#052659] text-white text-lg w-32 h-12 rounded-xl">Ver mas</button>
+          <button className="bg-[#052659] text-white text-lg px-6 h-12 rounded-lg hover:bg-white hover:text-black">Solicitar tu viaje</button>
         </div>
       </div>
 
-      {/* Blogs Section */}
+      {/* Blog Section */}
       <section className="px-4 py-6 bg-[#EFF0F2]">
-        <h2 className="text-2xl text-center mb-4">Vive Las Mejores <br /> Experiencias</h2>
+        <h2 className="text-2xl text-center mb-4">
+          Vive Las Mejores
+          <br />
+          Experiencias
+        </h2>
           <div className="flex flex-col items-center gap-4">
           <BlogList />
         </div>
       </section>
-      {/* Products Section */}
 
+      {/* Products Section */}
       <section className="px-4 py-6">
         <h2 className="text-2xl text-center mb-4">Viaja Con Nosotros</h2>
         <div className="flex flex-col items-center gap-4">
