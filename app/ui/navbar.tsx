@@ -7,6 +7,7 @@ import { useState } from "react"
 import Link from "next/link"
 
 import MenuMobile from "@/app/ui/menu-mobile";
+import { usePathname } from "next/navigation";
 
 
 // Icons Name | svg file name
@@ -18,11 +19,18 @@ const icons = [
 ]
 
 export default function NavBarMobile () {
+  const pathname = usePathname()
+  const regex1 = /\/products\/.*/;
+  const regex2 = /\/blog\/.*/;
+  const product = regex1.test(pathname)
+  const post = regex2.test(pathname)
+  const showNavbar = !!!(product || post)
+
   // Movile Menu State
   const [showMenu, setShowMenu] = useState(false)
 
   return (
-    <header className="relative">
+    <header className={`relative ${!showNavbar ? 'hidden' : 'block'}`}>
       <nav className='flex justify-between items-center h-auto bg-[#052659] px-5 py-4 text-white'>
         <div className="flex justify-between items-center gap-4">
           <button
