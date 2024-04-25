@@ -1,13 +1,13 @@
 // Components Imports
-import NavBarMobile from "@/app/ui/navbar";
-import FooterMobile from "@/app/ui/footer";
+import Navbar from "@/app/ui/navbar";
+import Footer from "@/app/ui/footer";
 
 export default function Template({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <NavBarMobile />
+      <Navbar />
       {children}
-      <FooterMobile />
+      <Footer />
     </>
   )
 }
