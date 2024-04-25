@@ -65,10 +65,10 @@ export function fetchBlogCardData() {
     const data = blogs.map(blog => {
       return {
         id: blog.id,
-        name: blog.name,
+        slogan: blog.slogan,
         href: `/blog/${blog.slug}`,
         image: blog.images[0],
-        alt: blog.alt,
+        alt: blog.slogan,
         location: blog.location
       }
     })
@@ -76,6 +76,26 @@ export function fetchBlogCardData() {
   } catch (error) {
     console.error('Database Error: ', error)
     throw new Error ('Failed to fetch blog card data.')
+  }
+}
+
+export function fetchPosts() {
+  try {
+    const data = blogs.map(post => {
+      return {
+        id: post.id,
+        name: post.name,
+        href: `/blog/${post.slug}`,
+        image: post.images[0],
+        alt: post.slogan,
+        category: post.category,
+        extract: post.extract,
+      }
+    })
+    return data
+  } catch (error) {
+    console.error('Database Error: ', error)
+    throw new Error ('Failed to fetch posts')
   }
 }
 

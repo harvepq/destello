@@ -19,7 +19,7 @@ export default function BlogList () {
           key={blog.id}
           href={blog.href}
         >
-          <NewsCard name={blog.name} alt={blog.alt} image={blog.image} location={blog.location} />
+          <NewsCard name={blog.slogan} alt={blog.alt} image={blog.image} location={blog.location} />
         </Link>
       ))}
     </>
