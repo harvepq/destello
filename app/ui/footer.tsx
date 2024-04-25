@@ -1,32 +1,27 @@
+'use client'
+
 // Next Imports
 import Link from "next/link"
 
-// Icons Name | svg file name
-const icons = [
-  {name: 'facebook-icon', url: '#'},
-  {name: 'instagram-icon', url: '#'},
-  {name: 'whatsapp-icon', url: '#'},
-  {name: 'tiktok-icon', url: '#'},
-]
+// Utils Imports
+import { socialNetworks } from "@/app/lib/varibles";
+import { links } from "@/app/lib/varibles";
+import {pathValidate} from "@/app/lib/utils"
+import { usePathname } from "next/navigation";
 
-// Footer links
-const links = [
-  {name: 'Home', href: '/'},
-  {name: 'Tours', href: '/tours'},
-  {name: 'Blog', href: '/blog'},
-  {name: 'Nosotros', href: '/about'}
-]
+export default function Footer () {
+  const pathname = usePathname()
+  const showFooter  = pathValidate(pathname)
 
-export default function FooterMobile () {
   return (
-    <footer>
+    <footer className={`${showFooter ? 'block' : 'hidden'}`}>
       <div className="flex flex-col items-center bg-[#052659] text-white px-5 py-4">
         <ul className="flex gap-4 py-4">
-          {icons.map(icon => (
-            <li key={icon.name}>
-            <a href={icon.url}>
-              <img src={`/icons/${icon.name}.svg`}alt={icon.name} />
-            </a>
+          {socialNetworks.map(socialMedia => (
+            <li key={socialMedia.name}>
+              <a href={socialMedia.href}>
+                <img src={`/icons/${socialMedia.icon}.svg`} alt={`${socialMedia.name} icon`} />
+              </a>
           </li>
           ))}
         </ul>
