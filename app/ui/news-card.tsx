@@ -2,9 +2,9 @@ import Image from "next/image"
 
 export default function NewsCard ({name, alt, image, location} : any) {
   return (
-    <div className="flex flex-col items-center relative min-w-72 max-w-md rounded-xl overflow-hidden">
+    <div className="flex flex-col items-center relative min-w-72 max-w-md rounded-xl overflow-hidden xl:min-w-64">
       <picture>
-        <img className="aspect-[2/1.3] object-cover brightness-90" src={image} alt={alt} />
+        <img className="aspect-[2/1.3] object-cover brightness-90 xl:aspect-[1/1.5]" src={image} alt={alt} />
       </picture>
       <div className="text-white absolute bottom-4">
         <p className="text-xl">{name}</p>
