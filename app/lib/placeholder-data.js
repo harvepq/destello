@@ -123,18 +123,22 @@ const blogs = [
   {
     id: 'blog001',
     slug: 'viaja-suena-vive',
-    name: 'Viaja, Suena y Vive',
-    alt: 'viaja suena y vive',
+    name: 'Convierte tu viaje en un simbolo de identidad de tu cliente',
+    slogan: 'viaja suena y vive',
     images: ['/icons/news1.jpg'],
-    description: ['...'],
+    category: 'aventura',
+    extract: 'En una mercado saturado, donde la calidad de todo producto o servicio es bastante parecida, diferenciarse de tu competencia puede ser un reto.  Uno tiende a pensar que para diferenciase tiene que ser el mejor en el mercado, sin embargo, competir intentando ser el mejor es entrar en una carrera muy competitiva, larga y costosa donde solo gana uno. Y aunque ser el mejor puede ayudarte',
+    description: ['En una mercado saturado, donde la calidad de todo producto o servicio es bastante parecida, diferenciarse de tu competencia puede ser un reto.  Uno tiende a pensar que para diferenciase tiene que ser el mejor en el mercado, sin embargo, competir intentando ser el mejor es entrar en una carrera muy competitiva, larga y costosa donde solo gana uno. Y aunque ser el mejor puede ayudarte'],
     location: 'Madre de Dios'
   },
   {
     id: 'blog002',
     slug: 'se-un-destello-andino',
     name: 'Se un destello andino',
-    alt: 'se un destello andino',
+    slogan: 'se un destello andino',
     images: ['/icons/news2.jpg'],
+    category: 'cultural',
+    extract: 'En una mercado saturado, donde la calidad de todo producto o servicio es bastante parecida, diferenciarse de tu competencia puede ser un reto.  Uno tiende a pensar que para diferenciase tiene que ser el mejor en el mercado, sin embargo, competir intentando ser el mejor es entrar en una carrera muy competitiva, larga y costosa donde solo gana uno. Y aunque ser el mejor puede ayudarte',
     description: ['...'],
     location: 'Sicuani - Cusco'
   },
