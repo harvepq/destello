@@ -11,34 +11,38 @@ export default function Page() {
     <main>
       {/* Hero Image */}
       <div className="relative w-full flex flex-col justify-center items-center">
-        <picture>
-          <img className="w-full aspect-[3/2] object-cover brightness-[0.8]" src="/products/product1.jpeg" alt="" />
+        <picture className="w-full">
+          <img className="w-full aspect-[3/2] object-cover brightness-[0.8] sm:h-[480px] md:h-[600px] lg:h-[720px]" src="/products/product1.jpeg" alt="" />
         </picture>
         <div className="absolute text-center">
           <h2 className="text-white text-4xl">Blog</h2>
         </div>
       </div>
-      <div className="my-2 flex flex-col items-center">
+      <div className="flex flex-col items-center">
         {posts.map(post => (
-          <section className="py-10" key={post.id}>
+          <section className="py-10 w-full" key={post.id}>
             <div className="flex items-center gap-5 mb-2">
               <div className="w-[10%]">
                 <span className="block border-t-2 border-[#D2984E]"></span>
               </div>
               <h3 className="uppercase text-[#D2984E]">{post.category}</h3>
             </div>
-            <div className="px-7">
+            <div className="px-7 m-auto lg:px-20 2xl:w-[1500px]">
               <h2 className="uppercase mb-6 text-3xl">{post.name}</h2>
-              <picture>
-                <img className="w-full aspect-[9/5] object-cover" src={post.image} alt="" />
-              </picture>
-              <p className="my-5">{post.extract}</p>
-              <Link
-                className="inline-block border-2 border-[#D2984E] border-solid px-5 py-2 rounded-lg"
-                href={post.href}
-              >
-                <p>Leer mas</p>
-              </Link>
+              <div className="md:flex md:flex-wrap justify-between">
+                <picture className="w-full md:max-w-[48%] lg:max-w-[45%]">
+                  <img className="w-full aspect-[9/5] object-cover" src={post.image} alt="" />
+                </picture>
+                <div className="w-full md:max-w-[48%] lg:max-w-[45%]">
+                  <p className="my-5 md:mt-0">{post.extract}</p>
+                  <Link
+                    className="inline-block border-2 border-[#D2984E] border-solid px-5 py-2 rounded-lg"
+                    href={post.href}
+                  >
+                    <p>Leer mas</p>
+                  </Link>
+                </div>
+              </div>
             </div>
           </section>
         ))}
