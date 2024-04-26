@@ -116,7 +116,243 @@ const products =[
       }
     ]
 
-  }
+  },
+  {
+    id: 'destello003',
+    slug: 'choquequirao',
+    name: 'Choquequirao',
+    title: 'Chquequirao 4D / 3N',
+    description: "Explora la 'hermana sagrada', de Machu Picchu, de donde la impresionante arquitectura y la atmosfera misteriosa te cautivara. Unete a esta expedicion hacia un sitio arqueologico en constante descubrimiento y dejate maravillar por la majestuosidad de Choquequirao.",
+    images: ['product1.jpeg', 'product2.jpg', 'product3.jpg'],
+    prices: {dollars: 380, soles: 700},
+    people: 2,
+    items: [
+      {
+        id: 'item1',
+        title: 'Aventura en privado',
+        description: 'El tour se lleva de manera privada y exclusiva',
+        icon: 'people'
+      },
+      {
+        id: 'item2',
+        title: 'Duracion',
+        description: '4 Dias - 3 Noches',
+        icon: 'clock'
+      },
+      {
+        id: 'item3',
+        title: 'Tipo de tour',
+        description: 'Cultural y aventura',
+        icon: 'person-walking'
+      },
+      {
+        id: 'item4',
+        title: 'Dificultad',
+        description: 'Facil',
+        icon: 'alert'
+      }
+    ],
+    itinerary : [
+      {
+        id: 'day_001',
+        name: 'Dia 1',
+        activities: [
+          {id: 'activity_01_001', start: '7:00', end:'8:00', descp: 'Desayuno en el Hotel'},
+          {id: 'activity_01_002', start: '7:00', end:'12:00', descp: 'Esto es la prueba mas absurda que puede existir ent todo el planeta'},
+          {id: 'activity_01_003', start: '13:00', end:'18:00', descp: 'Paseo con el guia asignado'},
+          {id: 'activity_01_004', start: '18:00', end:'23:00', descp: 'Cena de gala en el hotel'}
+        ]
+      },
+      {
+        id: 'day_002',
+        name: 'Dia 2',
+        activities: [
+          {id: 'activity_02_001', start: '7:00', end:'8:00', descp: 'Desayuno en el Hotel'},
+          {id: 'activity_02_002', start: '7:00', end:'12:00', descp: 'Esto es la prueba mas absurda que puede existir ent todo el planeta'},
+          {id: 'activity_02_003', start: '13:00', end:'18:00', descp: 'Paseo con el guia asignado'},
+          {id: 'activity_02_004', start: '18:00', end:'23:00', descp: 'Cena de gala en el hotel'}
+        ]
+      }
+    ]
+
+  },
+  {
+    id: 'destello004',
+    slug: 'choquequirao',
+    name: 'Choquequirao',
+    title: 'Chquequirao 4D / 3N',
+    description: "Explora la 'hermana sagrada', de Machu Picchu, de donde la impresionante arquitectura y la atmosfera misteriosa te cautivara. Unete a esta expedicion hacia un sitio arqueologico en constante descubrimiento y dejate maravillar por la majestuosidad de Choquequirao.",
+    images: ['product1.jpeg', 'product2.jpg', 'product3.jpg'],
+    prices: {dollars: 380, soles: 700},
+    people: 2,
+    items: [
+      {
+        id: 'item1',
+        title: 'Aventura en privado',
+        description: 'El tour se lleva de manera privada y exclusiva',
+        icon: 'people'
+      },
+      {
+        id: 'item2',
+        title: 'Duracion',
+        description: '4 Dias - 3 Noches',
+        icon: 'clock'
+      },
+      {
+        id: 'item3',
+        title: 'Tipo de tour',
+        description: 'Cultural y aventura',
+        icon: 'person-walking'
+      },
+      {
+        id: 'item4',
+        title: 'Dificultad',
+        description: 'Facil',
+        icon: 'alert'
+      }
+    ],
+    itinerary : [
+      {
+        id: 'day_001',
+        name: 'Dia 1',
+        activities: [
+          {id: 'activity_01_001', start: '7:00', end:'8:00', descp: 'Desayuno en el Hotel'},
+          {id: 'activity_01_002', start: '7:00', end:'12:00', descp: 'Esto es la prueba mas absurda que puede existir ent todo el planeta'},
+          {id: 'activity_01_003', start: '13:00', end:'18:00', descp: 'Paseo con el guia asignado'},
+          {id: 'activity_01_004', start: '18:00', end:'23:00', descp: 'Cena de gala en el hotel'}
+        ]
+      },
+      {
+        id: 'day_002',
+        name: 'Dia 2',
+        activities: [
+          {id: 'activity_02_001', start: '7:00', end:'8:00', descp: 'Desayuno en el Hotel'},
+          {id: 'activity_02_002', start: '7:00', end:'12:00', descp: 'Esto es la prueba mas absurda que puede existir ent todo el planeta'},
+          {id: 'activity_02_003', start: '13:00', end:'18:00', descp: 'Paseo con el guia asignado'},
+          {id: 'activity_02_004', start: '18:00', end:'23:00', descp: 'Cena de gala en el hotel'}
+        ]
+      }
+    ]
+
+  },
+  {
+    id: 'destello005',
+    slug: 'choquequirao',
+    name: 'Choquequirao',
+    title: 'Chquequirao 4D / 3N',
+    description: "Explora la 'hermana sagrada', de Machu Picchu, de donde la impresionante arquitectura y la atmosfera misteriosa te cautivara. Unete a esta expedicion hacia un sitio arqueologico en constante descubrimiento y dejate maravillar por la majestuosidad de Choquequirao.",
+    images: ['product1.jpeg', 'product2.jpg', 'product3.jpg'],
+    prices: {dollars: 380, soles: 700},
+    people: 2,
+    items: [
+      {
+        id: 'item1',
+        title: 'Aventura en privado',
+        description: 'El tour se lleva de manera privada y exclusiva',
+        icon: 'people'
+      },
+      {
+        id: 'item2',
+        title: 'Duracion',
+        description: '4 Dias - 3 Noches',
+        icon: 'clock'
+      },
+      {
+        id: 'item3',
+        title: 'Tipo de tour',
+        description: 'Cultural y aventura',
+        icon: 'person-walking'
+      },
+      {
+        id: 'item4',
+        title: 'Dificultad',
+        description: 'Facil',
+        icon: 'alert'
+      }
+    ],
+    itinerary : [
+      {
+        id: 'day_001',
+        name: 'Dia 1',
+        activities: [
+          {id: 'activity_01_001', start: '7:00', end:'8:00', descp: 'Desayuno en el Hotel'},
+          {id: 'activity_01_002', start: '7:00', end:'12:00', descp: 'Esto es la prueba mas absurda que puede existir ent todo el planeta'},
+          {id: 'activity_01_003', start: '13:00', end:'18:00', descp: 'Paseo con el guia asignado'},
+          {id: 'activity_01_004', start: '18:00', end:'23:00', descp: 'Cena de gala en el hotel'}
+        ]
+      },
+      {
+        id: 'day_002',
+        name: 'Dia 2',
+        activities: [
+          {id: 'activity_02_001', start: '7:00', end:'8:00', descp: 'Desayuno en el Hotel'},
+          {id: 'activity_02_002', start: '7:00', end:'12:00', descp: 'Esto es la prueba mas absurda que puede existir ent todo el planeta'},
+          {id: 'activity_02_003', start: '13:00', end:'18:00', descp: 'Paseo con el guia asignado'},
+          {id: 'activity_02_004', start: '18:00', end:'23:00', descp: 'Cena de gala en el hotel'}
+        ]
+      }
+    ]
+
+  },
+  {
+    id: 'destello006',
+    slug: 'choquequirao',
+    name: 'Choquequirao',
+    title: 'Chquequirao 4D / 3N',
+    description: "Explora la 'hermana sagrada', de Machu Picchu, de donde la impresionante arquitectura y la atmosfera misteriosa te cautivara. Unete a esta expedicion hacia un sitio arqueologico en constante descubrimiento y dejate maravillar por la majestuosidad de Choquequirao.",
+    images: ['product1.jpeg', 'product2.jpg', 'product3.jpg'],
+    prices: {dollars: 380, soles: 700},
+    people: 2,
+    items: [
+      {
+        id: 'item1',
+        title: 'Aventura en privado',
+        description: 'El tour se lleva de manera privada y exclusiva',
+        icon: 'people'
+      },
+      {
+        id: 'item2',
+        title: 'Duracion',
+        description: '4 Dias - 3 Noches',
+        icon: 'clock'
+      },
+      {
+        id: 'item3',
+        title: 'Tipo de tour',
+        description: 'Cultural y aventura',
+        icon: 'person-walking'
+      },
+      {
+        id: 'item4',
+        title: 'Dificultad',
+        description: 'Facil',
+        icon: 'alert'
+      }
+    ],
+    itinerary : [
+      {
+        id: 'day_001',
+        name: 'Dia 1',
+        activities: [
+          {id: 'activity_01_001', start: '7:00', end:'8:00', descp: 'Desayuno en el Hotel'},
+          {id: 'activity_01_002', start: '7:00', end:'12:00', descp: 'Esto es la prueba mas absurda que puede existir ent todo el planeta'},
+          {id: 'activity_01_003', start: '13:00', end:'18:00', descp: 'Paseo con el guia asignado'},
+          {id: 'activity_01_004', start: '18:00', end:'23:00', descp: 'Cena de gala en el hotel'}
+        ]
+      },
+      {
+        id: 'day_002',
+        name: 'Dia 2',
+        activities: [
+          {id: 'activity_02_001', start: '7:00', end:'8:00', descp: 'Desayuno en el Hotel'},
+          {id: 'activity_02_002', start: '7:00', end:'12:00', descp: 'Esto es la prueba mas absurda que puede existir ent todo el planeta'},
+          {id: 'activity_02_003', start: '13:00', end:'18:00', descp: 'Paseo con el guia asignado'},
+          {id: 'activity_02_004', start: '18:00', end:'23:00', descp: 'Cena de gala en el hotel'}
+        ]
+      }
+    ]
+
+  },
 ]
 
 const blogs = [
