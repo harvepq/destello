@@ -15,7 +15,7 @@ export default function Footer () {
 
   return (
     <footer className={`${showFooter ? 'block' : 'hidden'}`}>
-      <div className="flex flex-col items-center bg-[#052659] text-white px-5 py-4">
+      <div className="flex flex-col items-center bg-[#052659] text-white px-5 py-4 lg:px-20">
         <ul className="flex gap-4 py-4">
           {socialNetworks.map(socialMedia => (
             <li key={socialMedia.name}>
@@ -48,7 +48,7 @@ export default function Footer () {
           </div>
         </div>
       </div>
-      <div className="flex justify-between px-5 py-2 items-center bg-black text-white text-sm ">
+      <div className="flex justify-between px-5 py-2 items-center bg-black text-white text-sm lg:px-20 ">
         <span className="">Copyright Ⓒ 2024</span>
         <ul className="flex gap-4">
           <li>
