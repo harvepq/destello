@@ -23,7 +23,7 @@ export default function Navbar () {
 
   return (
     <header className={`relative ${!showNavbar ? 'hidden' : 'block'} sm:sticky sm:top-0 sm:z-10`}>
-      <nav className='flex justify-between items-center h-auto bg-[#052659] px-5 py-4 text-white md:px-20'>
+      <nav className='flex justify-between items-center h-auto bg-[#052659] px-5 py-4 text-white lg:px-20'>
         <div className="flex justify-between items-center gap-4">
           <button
             className="sm:hidden"
