@@ -10,8 +10,8 @@ export default function Page() {
     <main>
       {/* Hero Image */}
       <div className="relative w-full flex flex-col justify-center items-center">
-        <picture>
-          <img className="w-full aspect-[3/2] object-cover brightness-[0.8]" src="/products/product1.jpeg" alt="" />
+        <picture className="w-full">
+          <img className="w-full aspect-[3/2] object-cover brightness-[0.8] sm:h-[480px] md:h-[600px] lg:h-[720px]" src="/products/product1.jpeg" alt="" />
         </picture>
         <div className="absolute text-center">
           <h2 className="text-white text-4xl">Nosotros</h2>
@@ -19,7 +19,7 @@ export default function Page() {
       </div>
 
       {/* About Section */}
-      <section className="flex flex-col items-center gap-8 my-4 px-6">
+      <section className="flex flex-col items-center gap-8 my-4 px-6 lg:px-20">
         <AboutItem item={about.we_are} slogan="Somos los mejores"/>
         <AboutItem item={about.we_do} slogan="Hacemos que sea lo mejor"/>
         <Engagement item={about.engagement}/>
