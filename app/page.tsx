@@ -22,21 +22,21 @@ export default function Home() {
       </div>
 
       {/* Blog Section */}
-      <section className="px-4 py-6 bg-[#EFF0F2]">
+      <section className="px-4 py-6 bg-[#EFF0F2] lg:px-20">
         <h2 className="text-2xl text-center mb-4">
           Vive Las Mejores
           <br />
           Experiencias
         </h2>
-        <div className="flex flex-col items-center gap-4 sm:grid sm:grid-cols-2 sm:place-items-center xl:grid-cols-4 lg:px-20">
+        <div className="flex flex-col items-center gap-4 sm:grid sm:grid-cols-2 sm:place-items-center xl:grid-cols-4">
           <BlogList />
         </div>
     </section>
 
       {/* Products Section */}
-      <section className="px-4 py-6">
+      <section className="px-4 py-6 lg:px-20">
         <h2 className="text-2xl text-center mb-4">Viaja Con Nosotros</h2>
-        <div className="flex flex-col items-center gap-4">
+        <div className="flex flex-col items-center gap-4 sm:grid sm:grid-cols-2 sm:place-items-center sm:gap-x-6 sm:gap-y-10 xl:grid-cols-3 2xl:grid-cols-4">
           <ProductList />
         </div>
       </section>
