@@ -36,11 +36,11 @@ export default function Page({ params }: { params: { slug: string } }) {
       </div>
       <div className="w-full">
         <picture>
-          <img className="w-full aspect-[3/2] object-cover" src={post.images[0]}alt="" />
+          <img className="w-full aspect-[3/2] object-cover brightness-[0.8] sm:h-[480px] md:h-[600px] lg:h-[720px]" src={post.images[0]}alt="" />
         </picture>
       </div>
-      <div className="my-4 px-8">
-        <div className="max-w-md mx-auto">
+      <div className="my-4 px-8 lg:px-20">
+        <div className="max-w-md mx-auto md:max-w-3xl">
           <h2 className="text-4xl mb-6 mt-2 uppercase">{post.name}</h2>
           <div className="flex flex-col gap-4">
             <p>{post.description}</p>
