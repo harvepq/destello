@@ -14,7 +14,7 @@ export default function Footer () {
   const showFooter  = pathValidate(pathname)
 
   return (
-    <footer className={`${showFooter ? 'block' : 'hidden'}`}>
+    <footer className={`${showFooter ? 'block' : 'hidden'} md:block`}>
       <div className="flex flex-col items-center bg-[#052659] text-white px-5 py-4 lg:px-20">
         <ul className="flex gap-4 py-4">
           {socialNetworks.map(socialMedia => (
