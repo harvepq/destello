@@ -23,8 +23,8 @@ export default function Page({ params }: { params: { slug: string } }) {
 
   return (
     <main className="relative">
-      <section className={`${showImages?'hidden':'block'}`}>
-        <div className="p-4 absolute z-10">
+      <section className={`${showImages?'hidden':'block'} lg:max-w-[1024px] m-auto`}>
+        <div className="p-4 absolute z-10 md:hidden">
           <button
             className="h-9 w-9 inline-flex justify-center items-center border rounded-full bg-white cursor-pointer border-solid shadow-xl"
             onClick={() => route.back()}
@@ -43,30 +43,35 @@ export default function Page({ params }: { params: { slug: string } }) {
             </div>
           </button>
         </div>
-        <ProductImage images={product.images} showImages={showImages} setShowImages={setShowImages} />
-        <div className="pt-4 pb-24 px-6">
-          <ProductDescription
-            title={product.title}
-            description={product.description}
-            items={product.items}
-            itinerary={product.itinerary}
-          />
+        <div className="hidden px-6 md:block mt-4">
+          <h2 className="text-3xl font-bold">{product.title}</h2>
         </div>
-        <div className="fixed w-full bottom-0 bg-white">
-          <div className="flex justify-between items-center border-t-[1px] border-[#D2D2D2] py-2 px-6">
-            <div className="leading-3">
-              <h3 className="text-xl">US$ {product.prices.dollars}</h3>
-              <span className="block text-[#6D6D6D]">por {product.people} persona</span>
-              <h3 className="text-xl">PEN {product.prices.soles}</h3>
+        <ProductImage images={product.images} showImages={showImages} setShowImages={setShowImages} />
+        <div className="md:grid md:grid-cols-5 md:px-6 md:gap-20 lg:gap-24">
+          <div className="pt-4 pb-24 px-6 md:px-0 md:col-span-3">
+            <ProductDescription
+              title={product.title}
+              description={product.description}
+              items={product.items}
+              itinerary={product.itinerary}
+            />
+          </div>
+          <div className="fixed w-full bottom-0 bg-white md:static md:pt-6 md:col-span-2">
+            <div className="flex justify-between items-center border-t-[1px] border-[#D2D2D2] py-2 px-6 md:flex-col md:gap-12 md:sticky md:top-[100px] md:py-12 md:px-10 md:border-none md:shadow-[0px_0px_8px_2px_rgba(0,0,0,0.25)] md:rounded-xl">
+              <div className="leading-3 md:w-full">
+                <h3 className="text-xl">US$ {product.prices.dollars}</h3>
+                <span className="block text-[#6D6D6D] md:my-2">por {product.people} persona</span>
+                <h3 className="text-xl">PEN {product.prices.soles}</h3>
+              </div>
+              <button className="bg-[#052659] text-white text-lg w-32 h-12 rounded-lg md:w-full">Reservar</button>
             </div>
-            <button className="bg-[#052659] text-white text-lg w-32 h-12 rounded-lg">Reservar</button>
           </div>
         </div>
       </section>
       <div
-         className={` ${!showImages ? 'hidden' : 'block absolute top-0 left-0 right-0 z-10 w-full'}`}
+         className={` ${!showImages ? 'hidden' : 'block'} absolute top-0 left-0 right-0 z-20 w-full md:top-[-80px] bg-white`}
       >
-        <section className=''>
+        <section className='lg:max-w-[1024px] m-auto'>
           <div className="sticky top-0 p-4 bg-white">
             <button
               className="h-9 w-9 inline-flex justify-center items-center border rounded-full bg-white cursor-pointer border-solid shadow-xl"
