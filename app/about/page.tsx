@@ -19,12 +19,12 @@ export default function Page() {
       </div>
 
       {/* About Section */}
-      <section className="flex flex-col items-center gap-8 my-4 px-6 lg:px-20">
+      <section className="flex flex-col items-center gap-8 my-4 px-6 lg:px-20 lg:gap-20">
         <AboutItem item={about.we_are} slogan="Somos los mejores"/>
-        <AboutItem item={about.we_do} slogan="Hacemos que sea lo mejor"/>
+        <AboutItem item={about.we_do} slogan="Hacemos que sea lo mejor" className="md:flex-row-reverse"/>
         <Engagement item={about.engagement}/>
         <AboutItem item={about.mission} slogan="Ser lo mejores agentes"/>
-        <AboutItem item={about.vision} slogan="Llegar la empresa mas grande del mundo"/>
+        <AboutItem item={about.vision} slogan="Llegar la empresa mas grande del mundo" className="md:flex-row-reverse"/>
       </section>
     </main>
   )
