@@ -1,12 +1,12 @@
 // Nextjs Imports
 import type { Metadata } from "next";
-import { Sansita } from "next/font/google";
+import { Cuprum } from "next/font/google";
 
 // Styles Imports
 import "./globals.css";
 
 // Font Configuration
-const sansita = Sansita({ weight:['400','700','800'], subsets: ["latin"] });
+const curpum = Cuprum({ weight:['400','500','600', '700'], subsets: ["latin"] });
 
 // Metadata
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={sansita.className}>
+      <body className={curpum.className}>
         {children}
       </body>
     </html>
