@@ -35,8 +35,8 @@ export default function Home() {
     </section>
 
       {/* Products Section */}
-      <section className="px-4 py-6 lg:px-20">
-        <h2 className="text-2xl text-center mb-4">Viaja Con Nosotros</h2>
+      <section className="px-4 py-6 lg:px-20 lg:py-12">
+        <h2 className="text-2xl text-center mb-4 uppercase font-bold lg:text-4xl lg:mb-8">Viaja Con Nosotros</h2>
         <div className="flex flex-col items-center gap-4 sm:grid sm:grid-cols-2 sm:place-items-center sm:gap-x-6 sm:gap-y-10 xl:grid-cols-3 2xl:grid-cols-4">
           <ProductList />
         </div>
