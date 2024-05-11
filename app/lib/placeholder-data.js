@@ -5,7 +5,7 @@ const products =[
     name: 'Choquequirao',
     title: 'Chquequirao 4D / 3N',
     description: "Explora la 'hermana sagrada', de Machu Picchu, de donde la impresionante arquitectura y la atmosfera misteriosa te cautivara. Unete a esta expedicion hacia un sitio arqueologico en constante descubrimiento y dejate maravillar por la majestuosidad de Choquequirao.",
-    images: ['product1.jpeg', 'product2.jpg', 'product3.jpg'],
+    images: ['product1.jpeg', 'product1.jpeg', 'product1.jpeg', 'product1.jpeg', 'product1.jpeg'],
     prices: {dollars: 380, soles: 700},
     people: 2,
     items: [
@@ -64,7 +64,7 @@ const products =[
     name: 'Salkantay',
     title: 'Salkantay 4D / 3N',
     description: "El trekking de Salkantay te sumerge en una experiencia icomparable. Desde exhuberantes bosques tropicales hasta majestuosas cumbres nevadas, cada paso te lleva a traves de paisajes sorprendentes. Preparate para una aventura inolvidable que te dejara maravillado por la diversidad de naturaleza.",
-    images: ['product1.jpeg'],
+    images: ['product1.jpeg', 'product1.jpeg', 'product1.jpeg', 'product1.jpeg', 'product1.jpeg'],
     prices: {dollars: 400, soles: 1200},
     people: 4,
     items: [
@@ -123,7 +123,7 @@ const products =[
     name: 'Choquequirao',
     title: 'Chquequirao 4D / 3N',
     description: "Explora la 'hermana sagrada', de Machu Picchu, de donde la impresionante arquitectura y la atmosfera misteriosa te cautivara. Unete a esta expedicion hacia un sitio arqueologico en constante descubrimiento y dejate maravillar por la majestuosidad de Choquequirao.",
-    images: ['product1.jpeg', 'product2.jpg', 'product3.jpg'],
+    images: ['product1.jpeg', 'product1.jpeg', 'product1.jpeg', 'product1.jpeg', 'product1.jpeg'],
     prices: {dollars: 380, soles: 700},
     people: 2,
     items: [
@@ -182,7 +182,7 @@ const products =[
     name: 'Choquequirao',
     title: 'Chquequirao 4D / 3N',
     description: "Explora la 'hermana sagrada', de Machu Picchu, de donde la impresionante arquitectura y la atmosfera misteriosa te cautivara. Unete a esta expedicion hacia un sitio arqueologico en constante descubrimiento y dejate maravillar por la majestuosidad de Choquequirao.",
-    images: ['product1.jpeg', 'product2.jpg', 'product3.jpg'],
+    images: ['product1.jpeg', 'product1.jpeg', 'product1.jpeg', 'product1.jpeg', 'product1.jpeg'],
     prices: {dollars: 380, soles: 700},
     people: 2,
     items: [
@@ -241,7 +241,7 @@ const products =[
     name: 'Choquequirao',
     title: 'Chquequirao 4D / 3N',
     description: "Explora la 'hermana sagrada', de Machu Picchu, de donde la impresionante arquitectura y la atmosfera misteriosa te cautivara. Unete a esta expedicion hacia un sitio arqueologico en constante descubrimiento y dejate maravillar por la majestuosidad de Choquequirao.",
-    images: ['product1.jpeg', 'product2.jpg', 'product3.jpg'],
+    images: ['product1.jpeg', 'product1.jpeg', 'product1.jpeg', 'product1.jpeg', 'product1.jpeg'],
     prices: {dollars: 380, soles: 700},
     people: 2,
     items: [
@@ -300,7 +300,7 @@ const products =[
     name: 'Choquequirao',
     title: 'Chquequirao 4D / 3N',
     description: "Explora la 'hermana sagrada', de Machu Picchu, de donde la impresionante arquitectura y la atmosfera misteriosa te cautivara. Unete a esta expedicion hacia un sitio arqueologico en constante descubrimiento y dejate maravillar por la majestuosidad de Choquequirao.",
-    images: ['product1.jpeg', 'product2.jpg', 'product3.jpg'],
+    images: ['product1.jpeg', 'product1.jpeg', 'product1.jpeg', 'product1.jpeg', 'product1.jpeg'],
     prices: {dollars: 380, soles: 700},
     people: 2,
     items: [
