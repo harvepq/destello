@@ -43,8 +43,8 @@ export default function Home() {
       </section>
 
       {/* Reasons Section */}
-      <section className="px-6 py-6 bg-[#EFF0F2] lg:px-20">
-        <h2 className="text-2xl text-center mb-6">Por Que Viajar Con <br /> Destello Andino</h2>
+      <section className="px-6 py-6 bg-[#EFF0F2] lg:px-20 lg:py-12">
+        <h2 className="text-2xl text-center mb-6 uppercase font-bold lg:text-4xl lg:mb-8">Por Que Viajar Con <br /> Destello Andino</h2>
         <div className="flex flex-col items-center gap-8 sm:flex-row sm:justify-center sm:flex-wrap sm:py-10 sm:gap-12">
           <ReasonList />
         </div>
