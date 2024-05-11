@@ -9,15 +9,16 @@ export default function Home() {
       {/* Hero Image */}
       <div className="relative w-full flex justify-center">
         <picture className="w-full" >
-          <img className="w-full aspect-[4/5] object-cover brightness-[0.8] sm:h-[650px] lg:h-[720px]" src="/icons/news1.jpg" alt="" />
+          <img className="w-full aspect-[4/5] object-cover brightness-[0.7] sm:h-[650px] lg:h-[720px]" src="/icons/news1.jpg" alt="" />
         </picture>
-        <div className="w-[60%] absolute bottom-12 text-center">
-          <h1 className="text-white text-4xl mb-6 text-left">
-            <span className="block text-left">Se un</span>
-            <span className="block text-center">Destello</span>
-            <span className="block text-right">Andino</span>
+        <div className="w-[60%] absolute bottom-12 text-center md:text-start md:left-16 lg:left-40 md:w-1/4">
+          <h1 className="text-white text-4xl mb-6 text-left md:font-extrabold">
+            <span className="block text-left md:hidden">Se un</span>
+            <span className="block text-center md:hidden">Destello</span>
+            <span className="block text-right md:hidden">Andino</span>
+            <span className="hidden md:block md:text-4xl lg:text-5xl">"La vida no se mide por el numero de respiraciones que tenemos, sino por los sitios y momentos que nos quitan la respiracion."</span>
           </h1>
-          <button className="bg-[#052659] text-white text-lg px-6 h-12 rounded-lg hover:bg-white hover:text-black">Solicitar tu viaje</button>
+          <button className="bg-[#052659] text-white text-lg font-bold px-6 h-12 rounded-lg hover:bg-white hover:text-black">Solicitar tu viaje</button>
         </div>
       </div>
 
