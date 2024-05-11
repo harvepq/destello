@@ -23,8 +23,8 @@ export default function Home() {
       </div>
 
       {/* Blog Section */}
-      <section className="px-4 py-6 bg-[#EFF0F2] lg:px-20">
-        <h2 className="text-2xl text-center mb-4">
+      <section className="px-4 py-6 bg-[#EFF0F2] lg:px-20 lg:py-12">
+        <h2 className="text-2xl text-center mb-4 uppercase font-bold lg:text-4xl lg:mb-8">
           Vive Las Mejores
           <br />
           Experiencias
