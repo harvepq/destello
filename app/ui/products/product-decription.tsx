@@ -35,7 +35,7 @@ export default function ProductDescription({
 
   return (
     <>
-      <h1 className="text-3xl font-semibold">{title}</h1>
+      <h1 className="text-3xl font-semibold md:hidden">{title}</h1>
       <p className="text-[#6D6D6D] py-4 mb-2">{description}</p>
       <div className="py-6 border-t-[1px] border-dashed border-[#D2D2D2]">
         <ul className="flex flex-col gap-6">
