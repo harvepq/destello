@@ -14,22 +14,22 @@ export default function ProductImage({images, setShowImages}: any) {
         </div>
       </div>
       <div className="hidden md:grid md:grid-cols-2 md:gap-2">
-        <div className="w-full cursor-pointer">
+        <div className="w-full cursor-pointer" onClick={() => {setShowImages(true)}}>
           <picture>
             <img className="w-full aspect-[1] object-cover" src={`/products/${images[1]}`} alt="" />
           </picture>
         </div>
-        <div className="w-full cursor-pointer rounded-tr-xl overflow-hidden">
+        <div className="w-full cursor-pointer rounded-tr-xl overflow-hidden" onClick={() => {setShowImages(true)}}>
           <picture>
             <img className="w-full aspect-[1] object-cover" src={`/products/${images[2]}`} alt="" />
           </picture>
         </div>
-        <div className="w-full cursor-pointer">
+        <div className="w-full cursor-pointer" onClick={() => {setShowImages(true)}}>
           <picture>
             <img className="w-full aspect-[1] object-cover" src={`/products/${images[3]}`} alt="" />
           </picture>
         </div>
-        <div className="w-full cursor-pointer rounded-br-xl overflow-hidden">
+        <div className="w-full cursor-pointer rounded-br-xl overflow-hidden" onClick={() => {setShowImages(true)}}>
           <picture>
             <img className="w-full aspect-[1] object-cover" src={`/products/${images[4]}`} alt="" />
           </picture>
