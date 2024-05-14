@@ -23,7 +23,8 @@ export function fetchProductCardData () {
         id: product.id,
         slug: product.slug,
         name: product.name,
-        image: `/products/${product.images[0]}`,
+        description: product.description,
+        image: product.images[0],
         href: `/products/${product.slug}`,
         items: {
           duration: product.items[1].description,
