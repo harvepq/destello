@@ -16,7 +16,7 @@ export default function Home() {
             <span className="block text-left md:hidden">Se un</span>
             <span className="block text-center md:hidden">Destello</span>
             <span className="block text-right md:hidden">Andino</span>
-            <span className="hidden md:block md:text-4xl lg:text-5xl">"La vida no se mide por el numero de respiraciones que tenemos, sino por los sitios y momentos que nos quitan la respiracion."</span>
+            <span className="hidden md:block md:text-4xl lg:text-5xl">&quot;La vida no se mide por el numero de respiraciones que tenemos, sino por los sitios y momentos que nos quitan la respiracion.&quot;</span>
           </h1>
           <button className="bg-[#052659] text-white text-lg font-bold px-6 h-12 rounded-lg hover:bg-white hover:text-black">Solicitar tu viaje</button>
         </div>
