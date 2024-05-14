@@ -17,7 +17,7 @@ export default function ProductList () {
           key={product.id}
           href={product.href}
         >
-          <ProductCard name={product.name} image={product.image} items={product.items} prices={product.prices} people={product.people} />
+          <ProductCard name={product.name} description={product.description} image={product.image} items={product.items} prices={product.prices} people={product.people} />
         </Link>
       ))}
     </>
