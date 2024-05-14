@@ -12,6 +12,7 @@ import ProductImage from "@/app/ui/products/product-image";
 
 // Data Imports
 import { fetchProductBySlug } from "@/app/lib/data";
+import Link from "next/link";
 
 
 export default function Page({ params }: { params: { slug: string } }) {
@@ -43,7 +44,7 @@ export default function Page({ params }: { params: { slug: string } }) {
             </div>
           </button>
         </div>
-        <div className="hidden px-6 md:block mt-4">
+        <div className="hidden px-6 md:block mt-8">
           <h2 className="text-3xl font-bold">{product.title}</h2>
         </div>
         <ProductImage images={product.images} showImages={showImages} setShowImages={setShowImages} />
@@ -58,12 +59,17 @@ export default function Page({ params }: { params: { slug: string } }) {
           </div>
           <div className="fixed w-full bottom-0 bg-white md:static md:pt-6 md:col-span-2">
             <div className="flex justify-between items-center border-t-[1px] border-[#D2D2D2] py-2 px-6 md:flex-col md:gap-12 md:sticky md:top-[100px] md:py-12 md:px-10 md:border-none md:shadow-[0px_0px_8px_2px_rgba(0,0,0,0.25)] md:rounded-xl">
-              <div className="leading-3 md:w-full">
+              {/* <div className="leading-3 md:w-full">
                 <h3 className="text-xl">US$ {product.prices.dollars}</h3>
                 <span className="block text-[#6D6D6D] md:my-2">por {product.people} persona</span>
                 <h3 className="text-xl">PEN {product.prices.soles}</h3>
-              </div>
-              <button className="bg-[#052659] text-white text-lg w-32 h-12 rounded-lg md:w-full">Reservar</button>
+              </div> */}
+              <Link href={`https://wa.me/51928505264?text=Estoy%20interesado%20en%20el%20producto%20${product.title}`}
+                className="bg-[#052659] text-white text-center text-lg px-12 py-4 rounded-lg md:w-full"
+                target="_blank"
+              >
+                <p className="font-bold text-xl">Consultar</p>
+              </Link>
             </div>
           </div>
         </div>
@@ -94,7 +100,7 @@ export default function Page({ params }: { params: { slug: string } }) {
           <div className="flex flex-col gap-2 bg-white">
             {product.images.map((image) => (
               <picture key={image}>
-                <img className="w-full aspect-[3/2] object-cover" src={image} alt="" />
+                <img className="w-full aspect-[3/2] object-cover" src={`/products/${image}`} alt="" />
               </picture>
             ))}
           </div>
