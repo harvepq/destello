@@ -8,7 +8,7 @@ export default function AboutItem ({item, slogan, className}: any) {
         </div>
         <div className="min-w-72 max-w-md relative flex justify-center m-auto md:min-w-[46%]">
           <picture className="w-full">
-            <img className="w-full aspect-[9/5] object-cover rounded-xl" src="/icons/news1.jpg" alt="" />
+            <img className="w-full aspect-[9/5] object-cover rounded-xl" src="/about-us/about1.jpg" alt="" />
           </picture>
           <div className="absolute -bottom-2 bg-black/[0.8] text-white rounded-xl w-[90%] leading-[40px] text-center">{slogan}</div>
         </div>
