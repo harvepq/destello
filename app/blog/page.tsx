@@ -12,7 +12,7 @@ export default function Page() {
       {/* Hero Image */}
       <div className="relative w-full flex flex-col justify-center items-center">
         <picture className="w-full">
-          <img className="w-full aspect-[3/2] object-cover brightness-[0.8] sm:h-[480px] md:h-[600px] lg:h-[720px]" src="/products/product1.jpeg" alt="" />
+          <img className="w-full aspect-[3/2] object-cover brightness-[0.8] sm:h-[480px] md:h-[600px] lg:h-[720px]" src="/hero/hero-blog.jpg" alt="" />
         </picture>
         <div className="absolute text-center">
           <h2 className="text-white text-4xl">Blog</h2>
@@ -31,12 +31,12 @@ export default function Page() {
               <h2 className="uppercase mb-6 text-3xl">{post.name}</h2>
               <div className="md:flex md:flex-wrap justify-between">
                 <picture className="w-full md:max-w-[48%] lg:max-w-[45%]">
-                  <img className="w-full aspect-[9/5] object-cover" src={post.image} alt="" />
+                  <img className="w-full aspect-[9/5] object-cover" src={`blog/${post.image}`} alt="" />
                 </picture>
                 <div className="w-full md:max-w-[48%] lg:max-w-[45%]">
                   <p className="my-5 md:mt-0">{post.extract}</p>
                   <Link
-                    className="inline-block border-2 border-[#D2984E] border-solid px-5 py-2 rounded-lg"
+                    className="inline-block border-2 border-[#D2984E] border-solid px-5 py-2 rounded-lg sm:hover:scale-105"
                     href={post.href}
                   >
                     <p>Leer mas</p>
