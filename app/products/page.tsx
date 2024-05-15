@@ -17,7 +17,7 @@ export default function Page() {
           <div className="w-[10%]">
             <span className="block border-t-2 border-[#D2984E]"></span>
           </div>
-          <h3 className="uppercase text-[#D2984E]">nuesstros productos</h3>
+          <h3 className="uppercase text-[#D2984E]">nuestros productos</h3>
         </div>
         <div className="px-7 lg:px-20">
           <h2 className="uppercase mb-6 text-3xl lg:my-8">Convierte tu viaje en un simbolo de identidad</h2>
