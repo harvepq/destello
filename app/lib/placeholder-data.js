@@ -4,9 +4,9 @@ const products =[
     slug: 'choquequirao',
     name: 'Choquequirao',
     title: 'Chquequirao 4D / 3N',
-    description: "Explora la 'hermana sagrada', de Machu Picchu, de donde la impresionante arquitectura y la atmosfera misteriosa te cautivara. Unete a esta expedicion hacia un sitio arqueologico en constante descubrimiento y dejate maravillar por la majestuosidad de Choquequirao.",
+    description: "Explora la 'hermana sagrada' de Machu Picchu, donde la impresionante arquitectura y la atmósfera misteriosa te cautivarán. Únete a esta expedición única hacia un sitio arqueológico en constante descubrimiento y déjate maravillar por la majestuosidad de Choquequirao.",
     images: ['product1.jpeg', 'product1.jpeg', 'product1.jpeg', 'product1.jpeg', 'product1.jpeg'],
-    prices: {dollars: 380, soles: 700},
+    prices: {dollars: 0, soles: 0},
     people: 2,
     items: [
       {
@@ -63,7 +63,7 @@ const products =[
     slug: 'salkantay',
     name: 'Salkantay',
     title: 'Salkantay 4D / 3N',
-    description: "El trekking de Salkantay te sumerge en una experiencia icomparable. Desde exhuberantes bosques tropicales hasta majestuosas cumbres nevadas, cada paso te lleva a traves de paisajes sorprendentes. Preparate para una aventura inolvidable que te dejara maravillado por la diversidad de naturaleza.",
+    description: " El trekking de Salkantay te sumerge en una experiencia incomparable. Desde exuberantes bosques tropicales hasta majestuosas cumbres nevadas, cada paso te lleva a través de paisajes sorprendentes. Prepárate para una aventura inolvidable que te dejará maravillado por la diversidad de la naturaleza.",
     images: ['product1.jpeg', 'product1.jpeg', 'product1.jpeg', 'product1.jpeg', 'product1.jpeg'],
     prices: {dollars: 400, soles: 1200},
     people: 4,
@@ -119,10 +119,10 @@ const products =[
   },
   {
     id: 'destello003',
-    slug: 'choquequirao',
-    name: 'Choquequirao',
-    title: 'Chquequirao 4D / 3N',
-    description: "Explora la 'hermana sagrada', de Machu Picchu, de donde la impresionante arquitectura y la atmosfera misteriosa te cautivara. Unete a esta expedicion hacia un sitio arqueologico en constante descubrimiento y dejate maravillar por la majestuosidad de Choquequirao.",
+    slug: 'valle-encantado-full-day',
+    name: 'Valle Encantado FD',
+    title: 'Valle Encantado FD',
+    description: "Embárcate en el tour del Valle Encantado, una experiencia que te conectará con la serenidad y la belleza natural. Durante la caminata, serás testigo de una laguna impresionante que alberga más de 100 especies, así como paisajes espectaculares y monumentos culturales. Descubre el famoso bosque de eucaliptos del Cusco, pasa por lugares emblemáticos como Qenqo y el Templo de la Luna, y naliza en el pintoresco barrio tradicional de San Blas, Toqocachi. Sumérgete en la tranquilidad y la magia del Valle Encantado mientras te conectas con la esencia misma de la naturaleza.",
     images: ['product1.jpeg', 'product1.jpeg', 'product1.jpeg', 'product1.jpeg', 'product1.jpeg'],
     prices: {dollars: 380, soles: 700},
     people: 2,
@@ -136,7 +136,7 @@ const products =[
       {
         id: 'item2',
         title: 'Duracion',
-        description: '4 Dias - 3 Noches',
+        description: 'Full Day',
         icon: 'clock'
       },
       {
@@ -178,10 +178,10 @@ const products =[
   },
   {
     id: 'destello004',
-    slug: 'choquequirao',
-    name: 'Choquequirao',
-    title: 'Chquequirao 4D / 3N',
-    description: "Explora la 'hermana sagrada', de Machu Picchu, de donde la impresionante arquitectura y la atmosfera misteriosa te cautivara. Unete a esta expedicion hacia un sitio arqueologico en constante descubrimiento y dejate maravillar por la majestuosidad de Choquequirao.",
+    slug: 'huchuy-qosqo-full-day',
+    name: 'Huchuy Qosqo FD',
+    title: 'Huchuy Qosqo FD',
+    description: "Sumérgete en la maravilla arqueológica de Huchuy Qosqo en una jornada repleta de aventura y belleza natural. Inicia tu emocionante caminata en el encantador pueblo de Tambomachay, explorando las montañas hasta alcanzar el impresionante paso de Pucajasa. En el trayecto, serás testigo de dos hermosas lagunas y serás recibido por las apachetas, símbolos de veneración a los apus, donde muchos viajeros piden sus deseos. Descubre las impresionantes construcciones de adobe y piedra de HuchuyQosqoantes deconcluir tu travesía en el acogedor pueblo de Umasbamba,Chinchero, cercano a la serena laguna Piuray. Prepárate para una experiencia que te dejará maravillado y te conectará con la historia y la majestuosidad de los Andes.",
     images: ['product1.jpeg', 'product1.jpeg', 'product1.jpeg', 'product1.jpeg', 'product1.jpeg'],
     prices: {dollars: 380, soles: 700},
     people: 2,
@@ -195,7 +195,7 @@ const products =[
       {
         id: 'item2',
         title: 'Duracion',
-        description: '4 Dias - 3 Noches',
+        description: 'Full Day',
         icon: 'clock'
       },
       {
@@ -237,10 +237,10 @@ const products =[
   },
   {
     id: 'destello005',
-    slug: 'choquequirao',
-    name: 'Choquequirao',
-    title: 'Chquequirao 4D / 3N',
-    description: "Explora la 'hermana sagrada', de Machu Picchu, de donde la impresionante arquitectura y la atmosfera misteriosa te cautivara. Unete a esta expedicion hacia un sitio arqueologico en constante descubrimiento y dejate maravillar por la majestuosidad de Choquequirao.",
+    slug: 'sendero-chinchero-urquillos-full-day',
+    name: 'Sendero Chinchero-Urquillos FD',
+    title: 'Sendero Chinchero-Urquillos FD',
+    description: "Unaexperiencia de día completo que comienza en el encantador pueblo de Chinchero, uno de los más pintorescos de Cusco, con su impresionante sitio arqueológico inca coronado por una iglesia colonial. Desciende a pie por un antiguo camino inca, disfrutando de las magní cas vistas de los nevados Chicón y Pitusiray a lo lejos. En tu ruta, toma un desvío corto para maravillarte con la cautivadora catarata Poc Poc, un lugar perfecto para refrescarte y relajarte. A medida que te acercas a Urquillos, observarás cómo el paisaje se transforma en exuberantes campos de cultivo, repletos de una variada ora y fauna.",
     images: ['product1.jpeg', 'product1.jpeg', 'product1.jpeg', 'product1.jpeg', 'product1.jpeg'],
     prices: {dollars: 380, soles: 700},
     people: 2,
@@ -254,7 +254,7 @@ const products =[
       {
         id: 'item2',
         title: 'Duracion',
-        description: '4 Dias - 3 Noches',
+        description: 'Full Day',
         icon: 'clock'
       },
       {
@@ -292,66 +292,6 @@ const products =[
         ]
       }
     ]
-
-  },
-  {
-    id: 'destello006',
-    slug: 'choquequirao',
-    name: 'Choquequirao',
-    title: 'Chquequirao 4D / 3N',
-    description: "Explora la 'hermana sagrada', de Machu Picchu, de donde la impresionante arquitectura y la atmosfera misteriosa te cautivara. Unete a esta expedicion hacia un sitio arqueologico en constante descubrimiento y dejate maravillar por la majestuosidad de Choquequirao.",
-    images: ['product1.jpeg', 'product1.jpeg', 'product1.jpeg', 'product1.jpeg', 'product1.jpeg'],
-    prices: {dollars: 380, soles: 700},
-    people: 2,
-    items: [
-      {
-        id: 'item1',
-        title: 'Aventura en privado',
-        description: 'El tour se lleva de manera privada y exclusiva',
-        icon: 'people'
-      },
-      {
-        id: 'item2',
-        title: 'Duracion',
-        description: '4 Dias - 3 Noches',
-        icon: 'clock'
-      },
-      {
-        id: 'item3',
-        title: 'Tipo de tour',
-        description: 'Cultural y aventura',
-        icon: 'person-walking'
-      },
-      {
-        id: 'item4',
-        title: 'Dificultad',
-        description: 'Facil',
-        icon: 'alert'
-      }
-    ],
-    itinerary : [
-      {
-        id: 'day_001',
-        name: 'Dia 1',
-        activities: [
-          {id: 'activity_01_001', start: '7:00', end:'8:00', descp: 'Desayuno en el Hotel'},
-          {id: 'activity_01_002', start: '7:00', end:'12:00', descp: 'Esto es la prueba mas absurda que puede existir ent todo el planeta'},
-          {id: 'activity_01_003', start: '13:00', end:'18:00', descp: 'Paseo con el guia asignado'},
-          {id: 'activity_01_004', start: '18:00', end:'23:00', descp: 'Cena de gala en el hotel'}
-        ]
-      },
-      {
-        id: 'day_002',
-        name: 'Dia 2',
-        activities: [
-          {id: 'activity_02_001', start: '7:00', end:'8:00', descp: 'Desayuno en el Hotel'},
-          {id: 'activity_02_002', start: '7:00', end:'12:00', descp: 'Esto es la prueba mas absurda que puede existir ent todo el planeta'},
-          {id: 'activity_02_003', start: '13:00', end:'18:00', descp: 'Paseo con el guia asignado'},
-          {id: 'activity_02_004', start: '18:00', end:'23:00', descp: 'Cena de gala en el hotel'}
-        ]
-      }
-    ]
-
   },
 ]
 
@@ -401,37 +341,31 @@ const reasons = [
   }
 ]
 
-const tours = [
-  {
-    id: 2
-  }
-]
-
 const about = {
   we_are: {
-    title: 'Quienes Somos?',
-    description: 'Somos tu agencia de viaje segura, responsable y de confianza. Nos dedicamos a organizar y planificar tus viajes, brindandote la tranquilidad de saber que estas en buenas manos. Nuestro compromiso es liberarte de estres de la planificacion, asegurandonos de que cada detalle este cuidadosamente gestionado para que puedas disfrutar de una experiencia sin preocupaciones y llena de momentos inolvidables.'
+    title: '¿Quiénes Somos?',
+    description: 'Somos tu agencia de viajes segura, responsable y de confianza. Nos dedicamos a organizar y planificar tus viajes, brindándote la tranquilidad de saber que estás en buenas manos. Nuestro compromiso es liberarte del estrés de la planificación, asegurándonos de que cada detalle esté cuidadosamente gestionado para que puedas disfrutar de una experiencia sin preocupaciones y llena de momentos inolvidables.'
   },
   we_do: {
-    title: 'Que Hacemos?',
-    description: 'Lo que hacemos va mas alla de la simple planificacion de viajes, nos esforzamos por crear experiencias que inspiren, emocionen y enriquezcan la vida de nuestro clientes. Nos comprometemos a entender sus necesidades y deseos individuales para disenar viajes que superen sus expectativas y les permitan sumergirse en la magia de Peru.'
+    title: '¿Qué Hacemos?',
+    description: 'Lo que hacemos va más allá de la simple planificación de viajes; nos esforzamos por crear experiencias que inspiren, emocionen y enriquezcan la vida de nuestros clientes. Nos comprometemos a entender sus necesidades y deseos individuales para diseñar viajes que superen sus expectativas y les permitan sumergirse completamente en la magia de Perú.'
   },
   engagement: {
     title: 'Nuestro Compromiso',
-    description: 'Nuestro objetivo en Destello Andino es proporcionar experiencias de viaje excepcionales y seguras a nuestros clientes, cumpliendo asi nuestra mision de crear recuerdos inolvidables durante su estadia en su destino. Para logar esto, nos comprometemos a:',
+    description: 'Nuestro objetivo en Destello Andino es proporcionar experiencias de viaje excepcionales y seguras a nuestros clientes, cumpliendo así nuestra misión de crear recuerdos inolvidables durante su estadía en su destino. Para lograr esto, nos comprometemos a:',
     first: 'Ofrecer un servicio al cliente de primera clase, personalizado y adaptable a las necesidades individuales de cada viajero.',
-    second: 'Garantizar la seguridad y el bienstar de nuestros clientes en cada aspecto de su viaje, desde la planificacion hasta el regreso a su casa.',
-    third: 'Fomentar relaciones solidas con nuestros clientes, basadas en la confianza, la transparencia y la satisfaccion del cliente.',
-    fourth: 'Mantener un enfoque de mejora continua en la calidad y la reduccion del margen de error en nuestros servicios, mediante la evaluacion constantey el ajuste de nuestros procesos',
-    extract: 'Al adherirnos a estos principios y estrategias, nos esforzamos por cumplir nuestra mision de brindar experiencias de viaje inolvidables y convertirnos en el referente lider en viajes por los paises andinos.'
+    second: 'Garantizar la seguridad y el bienestar de nuestros clientes en cada aspecto de su viaje, desde la planificación hasta el regreso a casa.',
+    third: 'Fomentar relaciones sólidas con nuestros clientes, basadas en la confianza, la transparencia y la satisfacción del cliente.',
+    fourth: 'Mantener un enfoque de mejora continua en la calidad y la reducción del margen de error en nuestros servicios, mediante la evaluación constante y el ajuste de nuestros procesos.',
+    extract: 'Al adherirnos a estos principios y estrategias, nos esforzamos por cumplir nuestra misión de brindar experiencias de viaje inolvidables y convertirnos en el referente líder en viajes por los países andinos'
   },
   mission: {
-    title: 'Nuestra Mision',
-    description: 'En Destello Andino Travel nos dedicamos a convertir tus suenos de viajar en realidad. Somos expertos en crear experiencias inolvidables, desde la planificacion detallada hasta la ejecucion perfecta. Nuestra mision es liberarte del estres de la planificacion para que puedas sumergirte en la aventura y la emosion. Queremos que cada viaje sea una historia que contar, llena de momentos que te roben el aliento y recuerdos que duren toda la vida.'
+    title: 'Nuestra Misión',
+    description: 'En Destello Andino Travel nos dedicamos a convertir tu sueño de viajar en realidad. Somos expertos en crear experiencias inolvidables, desde la planificación detallada hasta la ejecución perfecta. Nuestra misión es liberarte del estrés de la planificación para que puedas sumergirte en la aventura y la emoción. Queremos que cada viaje sea una historia que contar, llena de momentos que te roben el aliento y recuerdos que duren toda la vida.'
   },
   vision: {
-    title: 'Nuestra Vision',
-    description: 'Ser el agente de viaje lider en los paises andinos, ofreciendo experiencias unicas y personalizadas que permitan a los viajeros descubrir la diversidad cultural, la riqueza natural y la aventura de los destinos andinos en su totalidad. desde los picos nevados de Colombia, hasta las tierras bajas de Argentina y Chile, aspiramos a ser el punto de referencia para aquellos que buscan explorar toda la region andino.'
+    title: 'Nuestra Visión',
+    description: 'Ser el agente de viaje líder en los países andinos, ofreciendo  experiencias únicas y personalizadas que permitan a los viajeros descubrir la diversidad cultural, la riqueza natural y la aventura de los destinos andinos en su totalidad. Desde los picos nevados de Colombia, hasta las tierras bajas de Argentina y Chile, aspiramos a ser el punto de referencia para aquellos que buscan explorar toda la región andina.'
   }
 }
 
@@ -439,6 +373,5 @@ module.exports = {
   products,
   blogs,
   reasons,
-  tours,
   about
 }

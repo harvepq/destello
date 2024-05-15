@@ -2,7 +2,6 @@ import {
   products,
   blogs,
   reasons,
-  tours,
   about
 } from './placeholder-data';
 
@@ -117,16 +116,6 @@ export function fetchReasons () {
   } catch (error) {
     console.error('Database Error: ', error)
     throw new Error('Failed to fetch reasons data.')
-  }
-}
-
-export function fetchTours () {
-  try {
-    const data = tours
-    return data
-  } catch (error) {
-    console.error('Database Error: ', error)
-    throw new Error('Failed to fetch tours data.')
   }
 }
 
