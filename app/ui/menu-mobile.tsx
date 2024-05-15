@@ -13,8 +13,11 @@ interface stateProps {
 export default function MenuMobile ({showMenu, setShowMenu, pathname} : stateProps) {
   return (
       <div
-        className={`fixed top-0 left-0 right-0 z-10 w-full h-svh bg-black/40 transition ease-in-out duration-500 delay-0 text-black  ${!showMenu ? '-translate-x-full' : ''} sm:static sm:h-full sm:translate-x-0 sm:bg-transparent sm:text-white sm:transition-none sm:w-auto`}
-        onClick={() => setShowMenu(!showMenu)}
+        className={`fixed top-0 left-0 right-0 z-10 w-full h-dvh bg-black/40 transition ease-in-out duration-500 delay-0 text-black  ${!showMenu ? '-translate-x-full' : ''} sm:static sm:h-full sm:translate-x-0 sm:bg-transparent sm:text-white sm:transition-none sm:w-auto`}
+        onClick={(event) => {
+          setShowMenu(!showMenu)
+          event.stopPropagation()
+        }}
       >
         <aside
           className="w-3/4 h-full flex flex-col justify-between bg-white p-6 text-center sm:w-full sm:bg-transparent sm:p-0"
