@@ -1,3 +1,4 @@
+import Product from '../ui/products/product';
 import {
   products,
   blogs,
@@ -37,6 +38,16 @@ export function fetchProductCardData () {
   } catch (error) {
     console.error('Database Error: ', error)
     throw new Error('Failed to fetch product card data.')
+  }
+}
+
+export function fetchProductsAllSlug() {
+  try {
+    const data = products.map(product => product.slug)
+    return data
+  } catch (error) {
+    console.error('Database Error: ', error)
+    throw new Error('Failed to fetch products slug.')
   }
 }
 
