@@ -90,6 +90,16 @@ export function fetchBlogCardData() {
   }
 }
 
+export function fetchBlogAllSlug() {
+  try {
+    const data = blogs.map(blog => blog.slug)
+    return data
+  } catch (error) {
+    console.error('Database Error: ', error)
+    throw new Error('Failed to fetch blog slug.')
+  }
+}
+
 export function fetchPosts() {
   try {
     const data = blogs.map(post => {
