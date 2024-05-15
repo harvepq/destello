@@ -1,3 +1,6 @@
+// Nextjs imports
+import Link from "next/link";
+
 // Import Components
 import BlogList from "@/app/ui/home/blog-list";
 import ProductList from "@/app/ui/home/product-list";
@@ -18,7 +21,10 @@ export default function Home() {
             <span className="block text-right md:hidden">Andino</span>
             <span className="hidden md:block md:text-4xl lg:text-5xl">&quot;La vida no se mide por el número de respiraciones que tenemos, sino por los sitios y momentos que nos quitan la respiración.&quot;</span>
           </h1>
-          <button className="bg-[#052659] text-white text-lg font-bold px-6 h-12 rounded-lg hover:bg-white hover:text-black">Solicitar tu viaje</button>
+          <Link 
+            href="https://wa.me/51928505264?text=Estoy%20interesado%20en%20viajar%20con%20Destello%20Andino.%20Necesito%20más%20información"
+            target="_blank"
+            className="bg-[#052659] text-white text-lg font-bold px-6 py-4 rounded-lg hover:bg-white hover:text-black">Solicitar información</Link>
         </div>
       </div>
 
