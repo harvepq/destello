@@ -61,7 +61,7 @@ export default function Product (slug: any) {
                 <span className="block text-[#6D6D6D] md:my-2">por {product.people} persona</span>
                 <h3 className="text-xl">PEN {product.prices.soles}</h3>
               </div> */}
-              <Link href={`https://wa.me/51928505264?text=Estoy%20interesado%20en%20el%20producto%20${product.title}`}
+              <Link href={`https://wa.me/51929589891?text=Estoy%20interesado%20en%20el%20producto%20${product.title}`}
                 className="bg-[#052659] text-white text-center text-lg px-12 py-4 rounded-lg md:w-full"
                 target="_blank"
               >
@@ -72,7 +72,7 @@ export default function Product (slug: any) {
         </div>
       </section>
       <div
-         className={` ${!showImages ? 'hidden' : 'block'} absolute top-0 left-0 right-0 z-20 w-full md:top-[-80px] bg-white`}
+         className={` ${!showImages ? 'hidden' : 'block'} absolute top-0 left-0 right-0 z-20 w-full md:top-[-96px] bg-white`}
       >
         <section className='lg:max-w-[1024px] m-auto'>
           <div className="sticky top-0 p-4 bg-white">
@@ -95,8 +95,8 @@ export default function Product (slug: any) {
             </button>
           </div>
           <div className="flex flex-col gap-2 bg-white">
-            {product.images.map((image) => (
-              <picture key={image}>
+            {product.images.map((image,i) => (
+              <picture key={`${image}${i}`}>
                 <img className="w-full aspect-[3/2] object-cover" src={`/products/${image}`} alt="" />
               </picture>
             ))}
