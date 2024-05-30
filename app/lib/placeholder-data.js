@@ -313,7 +313,7 @@ const blogs = [
   },
   {
     id: 'blog002',
-    slug: 'descubre-la-espiritualidad-del-Cusco',
+    slug: 'descubre-la-espiritualidad-del-cusco',
     name: 'Descubre la Espiritualidad del Cusco: Lugares Sagrados que Debes Visitar',
     slogan: 'Descubre la espiritualidad del Cusco',
     images: ['post1.jpg', 'post1.jpg', 'post1.jpg', 'post1.jpg'],
@@ -358,7 +358,7 @@ const blogs = [
   },
   {
     id: 'blog004',
-    slug: 'festividades-más-vibrantes-del-cusco',
+    slug: 'festividades-mas-vibrantes-del-cusco',
     name: 'Explora las Festividades más Vibrantes del Cusco',
     slogan: 'Festividades más vibrantes del Cusco',
     images: ['post1.jpg', 'post1.jpg', 'post1.jpg', 'post1.jpg'],
@@ -508,7 +508,7 @@ const blogs = [
   },
   {
     id: 'blog010',
-    slug: 'melodías-y-la-historia-de-la-musica-andina',
+    slug: 'melodias-y-la-historia-de-la-musica-andina',
     name: 'Explora las Melodías y la Historia de la Música Andina en el Cusco',
     slogan: 'Melodías y la Historia de la Música Andina',
     images: ['post1.jpg', 'post1.jpg', 'post1.jpg', 'post1.jpg'],
