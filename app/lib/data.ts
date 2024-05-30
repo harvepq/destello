@@ -72,8 +72,34 @@ export function fetchBlogs () {
 }
 
 export function fetchBlogCardData() {
+  type Blog = {
+    id: string;
+    slug: string;
+    name: string;
+    slogan: string;
+    images: string[],
+    category: string
+    extract: string;
+    description: string[],
+    location: string
+  }
   try {
-    const data = blogs.map(blog => {
+    const min = 0
+    const max = blogs.length - 1
+    const randomNumbers = new Set<number>();
+    const mainPageBlog: Blog[]=[]
+
+    while (randomNumbers.size < 4) {
+      const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+      randomNumbers.add(randomNum);
+    }
+
+    randomNumbers.forEach(item => {
+      mainPageBlog.push(blogs[item]);
+    })
+
+
+    const data = mainPageBlog.map(blog => {
       return {
         id: blog.id,
         slogan: blog.slogan,
