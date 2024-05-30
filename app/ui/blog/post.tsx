@@ -39,16 +39,16 @@ export default function Post(slug: any) {
       </div>
       <div className="my-4 px-8 lg:px-20">
         <div className="max-w-md mx-auto md:max-w-3xl">
-          <h2 className="text-4xl mb-6 mt-2 uppercase md:mt-10">{post.name}</h2>
-          <div className="flex flex-col gap-4 text-gray-600">
+          <h2 className="text-4xl mb-6 mt-2 uppercase md:mt-10 md:font-bold">{post.name}</h2>
+          <div className="flex flex-col gap-4 text-gray-700">
             {post.description.map(paragraph => (
               <p key={paragraph}>{paragraph}</p>
             ))}
           </div>
         </div>
         <div className="mt-8 flex flex-col items-center gap-4">
-          {postImages.map(image => (
-            <div className="min-w-72 max-w-md relative flex m-auto md:max-w-3xl" key={image}>
+          {postImages.map((image, i) => (
+            <div className="min-w-72 max-w-md relative flex m-auto md:max-w-3xl" key={`${image}${i}`}>
               <picture>
                 <img className="w-full aspect-[8/5] object-cover rounded-xl" src={`/blog/${image}`} alt="" />
               </picture>
