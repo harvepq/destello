@@ -36,11 +36,9 @@ export default function Navbar () {
             />
           </button>
           <Link href='/'>
-            <p className="text-xl font-extrabold leading-6">
-              Destello
-              <br />
-              &emsp; Andino
-            </p>
+            <img src="/icons/logo.png" alt="Logo destello andino"
+              className="h-16"
+              />
           </Link>
         </div>
 
