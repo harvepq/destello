@@ -324,20 +324,34 @@ const reasons = [
   {
     id: 'reason001',
     title: 'Seguridad en tus compras',
-    description: 'Aenean ut nulla at purus facilisis rhoncus a a tellus. Quisque pellentesque consequat ex in congue. Nulla eu tincidunt erat. Curabitur sit amet magna lectus. Etiam quis convallis risus.',
+    description: ['Somos una empresa certificada por el Ministerio de Comercio Exterior y Turismo del Perú, específicamente por la Gerencia de Turismo del Cusco, como agentes de viajes en el país. Esta certificación garantiza nuestro compromiso con los estándares de calidad y profesionalismo en la industria del turismo.',
+    'Además de nuestra certificación oficial, contamos con nuestro equipo el cual  está formado por profesionales apasionados y conocedores del destino, listos para brindar asesoramiento experto y atención personalizada en cada viaje.',
+    'Estamos comprometidos con la excelencia en cada paso del proceso de viaje, asegurándonos de que cada cliente experimente lo mejor que el destino Peruano tiene para ofrecer.'],
     icon: '/icons/lock.svg'
   },
   {
     id: 'reason002',
-    title: 'Atencion las 24 Horas',
-    description: 'Aenean ut nulla at purus facilisis rhoncus a a tellus. Quisque pellentesque consequat ex in congue. Nulla eu tincidunt erat. Curabitur sit amet magna lectus. Etiam quis convallis risus.',
-    icon: '/icons/lock.svg'
+    title: 'Calidad de Viaje',
+    description: ['Como empresa, nos enorgullecemos de ofrecer servicios de alta calidad en cada aspecto de su experiencia de viaje. Hemos establecido alianzas estratégicas con las principales empresas operadoras en el sector del turismo, lo que nos permite garantizar que nuestros clientes reciban lo mejor en cuanto a alojamiento, transporte y alimentación.',
+    'Nos ocupamos de todos los detalles para liberar a nuestros clientes del estrés al momento de elegir sus opciones de hospedaje, transporte y alimentación. Nuestro objetivo es proporcionarles una experiencia sin preocupaciones, donde puedan disfrutar plenamente de su viaje sin tener que preocuparse por la logística.',
+    'Ya sea que estén buscando una escapada relajante o una aventura emocionante, nos encargamos de desarrollar todos los aspectos de su itinerario para que puedan disfrutar al máximo de su experiencia de viaje. Con nuestro compromiso con la calidad y nuestro enfoque en la atención al cliente, nos esforzamos por superar las expectativas de quienes confían en nosotros para organizar sus viajes.'
+    ],
+    icon: '/icons/airplane.svg'
   },
   {
     id: 'reason003',
-    title: 'Calidad de Viaje',
-    description: 'Aenean ut nulla at purus facilisis rhoncus a a tellus. Quisque pellentesque consequat ex in congue. Nulla eu tincidunt erat. Curabitur sit amet magna lectus. Etiam quis convallis risus.',
-    icon: '/icons/lock.svg'
+    title: 'Kit Andino',
+    description: ['El Kit Andino que ofrecemos es una completa ayuda para todos nuestros viajeros, cuidadosamente diseñado para garantizar su comodidad y satisfacción durante su estancia. Además de los regalos y recuerdos que añaden un toque especial a su experiencia, incluimos una variedad de amenities que van desde productos de cuidado personal hasta deliciosos snacks cusqueños que les permiten saborear la auténtica cocina local.',
+    'Demostrando nuestro compromiso con la seguridad y el bienestar de nuestros viajeros, hemos incorporado elementos como alcohol y hojas de coca, que no solo son parte de la cultura andina, sino que también sirven como precauciones útiles durante su viaje. Además, pensando en el cuidado personal, hemos incluido lipstick para proteger la piel de los efectos resecantes del clima.',
+    'Con el Kit Andino, no solo buscamos brindar un servicio excepcional, sino también crear una experiencia memorable y auténtica que refleja la riqueza cultural y la hospitalidad de la región.'
+    ],
+    icon: '/icons/backpack.svg'
+  },
+  {
+    id: 'reason004',
+    title: 'Atención las 24 Horas',
+    description: ['Como agencia de viajes, nuestro compromiso con la satisfacción del cliente es primordial. Por eso, ofrecemos atención las 24 horas, los 7 días de la semana, para atender cualquier requerimiento o inquietud que puedan tener nuestros turistas durante su viaje. Estamos disponibles en todo momento porque nos preocupamos por su bienestar y queremos garantizar que su experiencia sea lo más placentera posible. Nuestro objetivo es asegurarnos de que cada uno de nuestros clientes esté completamente satisfecho con los servicios que brindamos y con la experiencia general de su viaje.'],
+    icon: '/icons/clock.svg'
   }
 ]
 
