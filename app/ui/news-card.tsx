@@ -7,7 +7,7 @@ export default function NewsCard ({name, alt, image, location} : any) {
         <img className="aspect-[2/1.3] object-cover brightness-90 xl:aspect-[1/1.5]" src={`/blog/${image}`} alt={alt} />
       </picture>
       <div className="w-full text-center text-white absolute bottom-0 py-4 bg-black/30 lg:py-6">
-        <p className="text-xl lg:font-bold">{name}</p>
+        <p className="text-xl lg:font-bold px-4">{name}</p>
         <div className="flex justify-center items-center gap-2">
           <img src="/icons/geo-alt.svg" alt="" />
           <span className="text-base lg:text-lg">{location}</span>
