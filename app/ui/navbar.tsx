@@ -47,9 +47,12 @@ export default function Navbar () {
         <ul className="flex gap-4">
           {socialNetworks.map(socialMedia => (
             <li key={socialMedia.name}>
-              <a href={socialMedia.href}>
+              <Link
+                href={socialMedia.href}
+                target="_blank"
+              >
                 <img className="w-6 h-6" src={`/icons/${socialMedia.icon}.svg`} alt={`${socialMedia.name} icon`} />
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
