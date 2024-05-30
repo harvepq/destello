@@ -25,7 +25,7 @@ export default function MenuMobile ({showMenu, setShowMenu, pathname} : statePro
           onClick={(event) => event.stopPropagation()}
         >
           <div className="">
-            <div className="flex justify-center mb-12 mt-4">
+            <div className="sm:hidden flex justify-center mb-12 mt-4">
               <Image
                 src='/icons/logo.svg'
                 alt="Logo de destello andino"
