@@ -15,25 +15,30 @@ export default function Footer () {
 
   return (
     <footer className={`${showFooter ? 'block' : 'hidden'} md:block`}>
-      <div className="flex flex-col items-center bg-[#052659] text-white px-5 py-4 lg:px-20">
-        <ul className="flex gap-4 py-4">
+      <div className="flex flex-col items-center justify-center bg-[#052659] text-white px-5 py-4 lg:px-20">
+        <ul className="flex gap-10 py-4 mb-2">
           {socialNetworks.map(socialMedia => (
             <li key={socialMedia.name}>
-              <a href={socialMedia.href}>
-                <img src={`/icons/${socialMedia.icon}.svg`} alt={`${socialMedia.name} icon`} />
-              </a>
+              <Link
+                href={socialMedia.href}
+                target="_blank"
+              >
+                <img
+                  src={`/icons/${socialMedia.icon}.svg`}
+                  alt={`${socialMedia.name} icon`}
+                  className="w-6 h-6"
+                />
+              </Link>
           </li>
           ))}
         </ul>
-        <div className="w-full flex justify-around border-t-[1px] border-gray-500 pt-4 ">
+        <div className="w-full items-center flex justify-around border-t-[1px] border-gray-500 pt-4 ">
           <Link
             href={'/'}
           >
-            <h3 className="text-xl text-center">
-              Destello
-              <br />
-              Andino
-            </h3>
+            <img src="/icons/logo.png" alt="Logo destello andino"
+              className="h-20"
+              />
           </Link>
           <div className="text-center text-neutral-300">
             {links.map(link => (
@@ -42,7 +47,7 @@ export default function Footer () {
                 href={link.href}
                 className="block p-1"
               >
-                <p className="text-sm">{link.name}</p>
+                <p className="text-base font-bold">{link.name}</p>
               </Link>
             ))}
           </div>
@@ -52,7 +57,7 @@ export default function Footer () {
         <span className="">Copyright Ⓒ 2024</span>
         <ul className="flex gap-4">
           <li>
-            <a href="/">Terminos y Condiciones</a>
+            <a href="/">Términos y Condiciones</a>
           </li>
           <li>
             <a href="/">Privacidad</a>
